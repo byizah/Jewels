@@ -506,7 +506,7 @@ const sellerNumber = '918891093751';
     document.getElementById('cart-subtotal').innerText = fmtINR(subtotal);
     
     if (discount.amount > 0) {
-      document.getElementById('cart-discount').innerText = `-${fmtINR(discount.amount)}`;
+      document.getElementById('cart-discount').innerText = `-${fmtINR(discount.amount)} (${discount.rate * 100}%)`;
       document.getElementById('discount-row').style.display = 'flex';
     } else {
       document.getElementById('discount-row').style.display = 'none';
