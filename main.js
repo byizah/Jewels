@@ -24,7 +24,7 @@ const sellerNumber = '918891093751';
     {id: 13, name: 'Double Layered Snake Chain Necklace', price: 252, images: ['assets/images/Doublelayeredsnakechainnecklace.JPG','assets/images/Doublelayeredsnakechainnecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Sleek double-layered snake chain. Minimalist elegance.'},
     {id: 14, name: 'Elegant Bow Necklace', price: 334, images: ['assets/images/ElegantBownecklace.png'], inStock: false, qtyAvailable: 1, category: 'necklaces', description: 'Charming bow pendant necklace. Sweet and elegant.'},
     {id: 15, name: 'Clover Double Chain Necklace', price: 322, images: ['assets/images/Cloverdoublechainnecklace.JPG','assets/images/Cloverdoublechainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Lucky clover charm with double chain. Stylish and meaningful.'},
-    {id: 16, name: 'Minimal Butterfly Necklace', price: 210, images: ['assets/images/Minimalbutterflynecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalbutterflynecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
+    {id: 16, name: 'Minimal Butterfly Necklace', price: 210, images: ['assets/images/Minimalbutterflynecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalbutterflynecklace1.png'], inStock: false, qtyAvailable: 2, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
     {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: true, qtyAvailable:2 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
   
     
@@ -676,6 +676,7 @@ const sellerNumber = '918891093751';
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
   });
+
 
 
 
