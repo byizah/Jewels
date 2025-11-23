@@ -803,7 +803,7 @@
 
 .rings-title {
   color: #6e2e4e;
-  font-size: 0.3rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 15px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -913,3 +913,4 @@
     padding: 40px 40px;
   }
 }
+
