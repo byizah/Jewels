@@ -43,12 +43,6 @@ const sellerNumber = '918891093751';
 
 
     // Earrings
-    {id: 28, name: 'Rose Gold Sphere Earrings', price: 99, images: ['assets/images/Rosegoldsphereearrings.JPG','assets/images/Rosegoldsphereearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'},
-    {id: 29, name: 'Golden Prism Earrings', price: 99, images: ['assets/images/Goldenprismearrings.JPG'], inStock: false, qtyAvailable: 10, category: 'earrings', description: 'Geometric prism design in gold. Modern and eye-catching.'},
-    {id: 30, name: 'Flower Cluster Earrings', price: 99, images: ['assets/images/Flowerclusterearrings.JPG'], inStock: false, qtyAvailable: 9, category: 'earrings', description: 'Delicate flower cluster studs. Feminine and charming.'},
-    {id: 31, name: 'Gold Huggie Hoop Earrings', price: 99, images: ['assets/images/Goldhuggiehoopearrings.JPG','assets/images/Goldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Classic gold huggie hoops. Versatile and stylish.'},
-    {id: 32, name: 'Swirl Earrings', price: 99, images: ['assets/images/Swirlearrings.JPG','assets/images/Swirlearrings1.png'], inStock: false, qtyAvailable: 15, category: 'earrings', description: 'Unique swirl design. Modern and elegant.'},
-    {id: 33, name: 'Rose Gold Huggie Hoop Earrings', price: 99, images: ['assets/images/Rosegoldhuggiehoopearrings.JPG','assets/images/Rosegoldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Rose gold huggie hoops. Chic and sophisticated.'},
    
   ];
 
@@ -686,3 +680,4 @@ const sellerNumber = '918891093751';
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
   });
+
