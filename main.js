@@ -7,12 +7,12 @@ const sellerNumber = '918891093751';
 
   const products = [
     // Rings - All ₹99
-    {id: 101, name: '⚫ Ring', price: 99, images: ['assets/images/circle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Elegant classic gold ring. Simple and timeless.'},
-    {id: 102, name: '🟧 Ring', price: 99, images: ['assets/images/square.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Beautiful rose gold finish ring. Perfect for everyday wear.'},
-    {id: 103, name: '🔺 Ring', price: 99, images: ['assets/images/triangle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Minimalist silver band. Sleek and modern.'},
-    {id: 104, name: '🏵️ Ring', price: 99, images: ['assets/images/flower.JPG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Delicate butterfly design. Charming and elegant.'},
-    {id: 105, name: '⭐ Ring', price: 99, images: ['assets/images/star.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
-    {id: 106, name: '❤️ Ring', price: 99, images: ['assets/images/love.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
+    {id: 101, name: 'Eternal Circle Ring', price: 99, images: ['assets/images/circle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Elegant classic gold ring. Simple and timeless.'},
+    {id: 102, name: 'GoldQuad Ring', price: 99, images: ['assets/images/square.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Beautiful rose gold finish ring. Perfect for everyday wear.'},
+    {id: 103, name: 'TriAura Ring', price: 99, images: ['assets/images/triangle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Minimalist silver band. Sleek and modern.'},
+    {id: 104, name: 'Floria Ring', price: 99, images: ['assets/images/flower.JPG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Delicate butterfly design. Charming and elegant.'},
+    {id: 105, name: 'Starlet Glow Ring', price: 99, images: ['assets/images/star.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
+    {id: 106, name: 'Divine Heart Ring', price: 99, images: ['assets/images/love.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
     // Bracelets
     {id: 1, name: 'Gold Heart Double Layer Bracelet', price: 249, images: ['assets/images/Goldheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'},
     {id: 2, name: 'Halo Heart Double Layer Bracelet', price: 249, images: ['assets/images/Haloheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Stunning halo heart design with double chain layers. A must-have accessory.'},
@@ -743,4 +743,5 @@ const sellerNumber = '918891093751';
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
   });
+
 
