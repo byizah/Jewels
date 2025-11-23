@@ -38,10 +38,34 @@ const sellerNumber = '918891093751';
     {id: 24, name: 'Vema Rose Gold Earrings', price: 254, images: ['assets/images/Vemarosegoldearring.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Elegant Vema design in rose gold. Perfect for any occasion.'},
     {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
     {id: 26, name: 'Halo Stud Earrings', price: 310, images: ['assets/images/Halostudearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Stunning halo design studs. Sparkle and shine.'},
-    {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'}
+    {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'},
+  
+
+
+    // Earrings
+    {id: 28, name: 'Rose Gold Sphere Earrings', price: 99, images: ['assets/images/Rosegoldsphereearrings.JPG','assets/images/Rosegoldsphereearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'},
+    {id: 29, name: 'Golden Prism Earrings', price: 99, images: ['assets/images/Goldenprismearrings.JPG'], inStock: false, qtyAvailable: 10, category: 'earrings', description: 'Geometric prism design in gold. Modern and eye-catching.'},
+    {id: 30, name: 'Flower Cluster Earrings', price: 99, images: ['assets/images/Flowerclusterearrings.JPG'], inStock: false, qtyAvailable: 9, category: 'earrings', description: 'Delicate flower cluster studs. Feminine and charming.'},
+    {id: 31, name: 'Gold Huggie Hoop Earrings', price: 99, images: ['assets/images/Goldhuggiehoopearrings.JPG','assets/images/Goldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Classic gold huggie hoops. Versatile and stylish.'},
+    {id: 32, name: 'Swirl Earrings', price: 99, images: ['assets/images/Swirlearrings.JPG','assets/images/Swirlearrings1.png'], inStock: false, qtyAvailable: 15, category: 'earrings', description: 'Unique swirl design. Modern and elegant.'},
+    {id: 33, name: 'Rose Gold Huggie Hoop Earrings', price: 99, images: ['assets/images/Rosegoldhuggiehoopearrings.JPG','assets/images/Rosegoldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Rose gold huggie hoops. Chic and sophisticated.'},
+   
   ];
 
   let cart = [];
+  
+  // Address form data
+  let addressForm = {
+    fullName: '',
+    phone: '',
+    houseNo: '',
+    street: '',
+    locality: '',
+    city: '',
+    state: '',
+    pinCode: ''
+  };
+
   const fmtINR = n => '₹' + n.toString();
 
   function calculateDiscount(subtotal) {
@@ -281,6 +305,16 @@ const sellerNumber = '918891093751';
 
   function clearCart(){
     cart = [];
+    addressForm = {
+      fullName: '',
+      phone: '',
+      houseNo: '',
+      street: '',
+      locality: '',
+      city: '',
+      state: '',
+      pinCode: ''
+    };
     updateCartCount();
     renderCartItems();
   }
@@ -289,6 +323,64 @@ const sellerNumber = '918891093751';
     const count = getCart().length;
     const el = document.getElementById('cart-count');
     if(count>0){ el.style.display='inline-block'; el.innerText = count; } else { el.style.display='none'; }
+  }
+
+  function validateAddressForm() {
+    const errors = {};
+    
+    if (!addressForm.fullName.trim()) {
+      errors.fullName = 'Full name is required';
+    }
+    
+    if (!addressForm.phone.trim()) {
+      errors.phone = 'Phone number is required';
+    } else if (!/^[0-9]{10}$/.test(addressForm.phone.trim())) {
+      errors.phone = 'Please enter a valid 10-digit phone number';
+    }
+    
+    if (!addressForm.houseNo.trim()) {
+      errors.houseNo = 'House/Flat number is required';
+    }
+    
+    if (!addressForm.street.trim()) {
+      errors.street = 'Street is required';
+    }
+    
+    if (!addressForm.locality.trim()) {
+      errors.locality = 'Locality is required';
+    }
+    
+    if (!addressForm.city.trim()) {
+      errors.city = 'City is required';
+    }
+    
+    if (!addressForm.state.trim()) {
+      errors.state = 'State is required';
+    }
+    
+    if (!addressForm.pinCode.trim()) {
+      errors.pinCode = 'PIN code is required';
+    } else if (!/^[0-9]{6}$/.test(addressForm.pinCode.trim())) {
+      errors.pinCode = 'Please enter a valid 6-digit PIN code';
+    }
+    
+    return errors;
+  }
+
+  function updateAddressField(field, value) {
+    addressForm[field] = value;
+    
+    // Clear error for this field
+    const errorElement = document.getElementById(`error-${field}`);
+    if (errorElement) {
+      errorElement.style.display = 'none';
+    }
+    
+    // Remove red border
+    const inputElement = document.getElementById(`input-${field}`);
+    if (inputElement) {
+      inputElement.style.borderColor = '#ffc0cb';
+    }
   }
 
   function renderCartItems(){
@@ -302,10 +394,18 @@ const sellerNumber = '918891093751';
       document.getElementById('cart-discount').innerText = '-₹0';
       document.getElementById('cart-total').innerText = '₹0';
       document.getElementById('discount-row').style.display = 'none';
-      document.getElementById('checkout-whatsapp').href = '#'; 
+      document.getElementById('checkout-whatsapp').onclick = null;
+      
+      // Hide address form when cart is empty
+      const addressSection = document.getElementById('address-form-section');
+      if (addressSection) {
+        addressSection.style.display = 'none';
+      }
+      
       return; 
     }
 
+    // Show address form when cart has items
     let subtotal = 0;
     currentCart.forEach((item, idx) => {
       const itemTotal = item.price * item.qty;
@@ -329,6 +429,77 @@ const sellerNumber = '918891093751';
       container.appendChild(itemDiv);
     });
 
+    // Add Address Form
+    const addressFormHTML = `
+      <div id="address-form-section" class="mt-4 p-3" style="background: rgba(255, 240, 245, 0.5); border-radius: 12px; border: 2px solid #ffc0cb;">
+        <h6 style="font-weight: 700; margin-bottom: 15px; color: var(--primary); font-size: 1rem;">
+          <i class="fas fa-map-marker-alt me-2"></i>Delivery Address
+        </h6>
+        <div class="row g-2">
+          <div class="col-12">
+            <input type="text" id="input-fullName" class="form-control form-control-sm" placeholder="Full Name *" 
+              value="${addressForm.fullName}" 
+              oninput="updateAddressField('fullName', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-fullName" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-12">
+            <input type="tel" id="input-phone" class="form-control form-control-sm" placeholder="Phone Number (10 digits) *" 
+              value="${addressForm.phone}" 
+              oninput="updateAddressField('phone', this.value)"
+              maxlength="10"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-phone" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-12">
+            <input type="text" id="input-houseNo" class="form-control form-control-sm" placeholder="House/Flat No. *" 
+              value="${addressForm.houseNo}" 
+              oninput="updateAddressField('houseNo', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-houseNo" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-12">
+            <input type="text" id="input-street" class="form-control form-control-sm" placeholder="Street *" 
+              value="${addressForm.street}" 
+              oninput="updateAddressField('street', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-street" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-12">
+            <input type="text" id="input-locality" class="form-control form-control-sm" placeholder="Locality *" 
+              value="${addressForm.locality}" 
+              oninput="updateAddressField('locality', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-locality" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-6">
+            <input type="text" id="input-city" class="form-control form-control-sm" placeholder="City *" 
+              value="${addressForm.city}" 
+              oninput="updateAddressField('city', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-city" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-6">
+            <input type="text" id="input-state" class="form-control form-control-sm" placeholder="State *" 
+              value="${addressForm.state}" 
+              oninput="updateAddressField('state', this.value)"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-state" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+          <div class="col-12">
+            <input type="tel" id="input-pinCode" class="form-control form-control-sm" placeholder="PIN Code (6 digits) *" 
+              value="${addressForm.pinCode}" 
+              oninput="updateAddressField('pinCode', this.value)"
+              maxlength="6"
+              style="border: 1px solid #ffc0cb; border-radius: 8px; padding: 10px; font-size: 0.85rem;">
+            <small id="error-pinCode" class="text-danger" style="display: none; font-size: 0.75rem;"></small>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    container.insertAdjacentHTML('beforeend', addressFormHTML);
+
     const discount = calculateDiscount(subtotal);
     const total = subtotal - discount.amount;
 
@@ -343,22 +514,55 @@ const sellerNumber = '918891093751';
     
     document.getElementById('cart-total').innerText = fmtINR(total);
 
-    let message = `Hello! I'd like to order from IZAH:%0A%0A`;
-    
-    currentCart.forEach(item => {
-      message += `*${item.name}*%0AQty: ${item.qty} × ₹${item.price} = ₹${item.price * item.qty}%0A%0A`;
-    });
-    
-    message += `Subtotal: ₹${subtotal}%0A`;
-    
-    if (discount.amount > 0) {
-      message += `Discount (${discount.rate * 100}%): -₹${discount.amount}%0A`;
-    }
-    
-    message += `*Total: ₹${total}*%0A%0A`;
-    
-    const waLink = `https://wa.me/${sellerNumber}?text=${message}`;
-    document.getElementById('checkout-whatsapp').href = waLink;
+    // Update checkout button to validate form
+    document.getElementById('checkout-whatsapp').onclick = function(e) {
+      e.preventDefault();
+      
+      const errors = validateAddressForm();
+      
+      // Display errors
+      Object.keys(errors).forEach(field => {
+        const errorElement = document.getElementById(`error-${field}`);
+        const inputElement = document.getElementById(`input-${field}`);
+        
+        if (errorElement && inputElement) {
+          errorElement.textContent = errors[field];
+          errorElement.style.display = 'block';
+          inputElement.style.borderColor = '#dc3545';
+        }
+      });
+      
+      // If there are errors, show toast and don't proceed
+      if (Object.keys(errors).length > 0) {
+        showToast('Please fill all address fields correctly');
+        return false;
+      }
+      
+      // If validation passes, create WhatsApp message
+      let message = `Hello! I'd like to order from IZAH:%0A%0A`;
+      
+      currentCart.forEach(item => {
+        message += `*${item.name}*%0AQty: ${item.qty} × ₹${item.price} = ₹${item.price * item.qty}%0A%0A`;
+      });
+      
+      message += `Subtotal: ₹${subtotal}%0A`;
+      
+      if (discount.amount > 0) {
+        message += `Discount (${discount.rate * 100}%): -₹${discount.amount}%0A`;
+      }
+      
+      message += `*Total: ₹${total}*%0A%0A`;
+      
+      message += `*Delivery Address:*%0A`;
+      message += `Name: ${addressForm.fullName}%0A`;
+      message += `Phone: ${addressForm.phone}%0A`;
+      message += `Address: ${addressForm.houseNo}, ${addressForm.street}%0A`;
+      message += `${addressForm.locality}, ${addressForm.city}%0A`;
+      message += `${addressForm.state} - ${addressForm.pinCode}`;
+      
+      const waLink = `https://wa.me/${sellerNumber}?text=${message}`;
+      window.open(waLink, '_blank');
+    };
 
     document.querySelectorAll('.remove-item').forEach(btn => {
       btn.addEventListener('click', e => {
@@ -481,5 +685,4 @@ const sellerNumber = '918891093751';
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
-
   });
