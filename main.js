@@ -6,6 +6,13 @@ const sellerNumber = '918891093751';
   ];
 
   const products = [
+    // Rings - All ₹99
+    {id: 101, name: 'Classic Gold Ring', price: 99, images: ['assets/images/circle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Elegant classic gold ring. Simple and timeless.'},
+    {id: 102, name: 'Rose Gold Ring', price: 99, images: ['assets/images/square.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Beautiful rose gold finish ring. Perfect for everyday wear.'},
+    {id: 103, name: 'Silver Band Ring', price: 99, images: ['assets/images/triangle.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Minimalist silver band. Sleek and modern.'},
+    {id: 104, name: 'Butterfly Ring', price: 99, images: ['assets/images/flower.JPG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Delicate butterfly design. Charming and elegant.'},
+    {id: 105, name: 'Heart Ring', price: 99, images: ['assets/images/star.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
+    {id: 106, name: 'Heart Ring', price: 99, images: ['assets/images/love.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
     // Bracelets
     {id: 1, name: 'Gold Heart Double Layer Bracelet', price: 249, images: ['assets/images/Goldheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'},
     {id: 2, name: 'Halo Heart Double Layer Bracelet', price: 249, images: ['assets/images/Haloheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Stunning halo heart design with double chain layers. A must-have accessory.'},
@@ -39,7 +46,10 @@ const sellerNumber = '918891093751';
     {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
     {id: 26, name: 'Halo Stud Earrings', price: 310, images: ['assets/images/Halostudearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Stunning halo design studs. Sparkle and shine.'},
     {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'},
- 
+  
+
+
+   
   ];
 
   let cart = [];
@@ -181,6 +191,62 @@ const sellerNumber = '918891093751';
         section.appendChild(card);
       });
     });
+  }
+
+  function renderRingsCarousel() {
+    const carousel = document.getElementById('rings-carousel');
+    if (!carousel) return;
+    
+    carousel.innerHTML = '';
+    
+    const ringProducts = products.filter(p => p.category === 'rings');
+    
+    ringProducts.forEach(ring => {
+      const card = document.createElement('div');
+      card.className = 'ring-card';
+      card.onclick = () => openProductDetail(ring.id);
+      
+      card.innerHTML = `
+        <img src="${ring.images[0]}" alt="${ring.name}">
+        
+        <div class="ring-card-overlay">
+          <div class="ring-card-name">${ring.name}</div>
+          <div class="ring-card-price">₹${ring.price}</div>
+        </div>
+      `;
+      
+      carousel.appendChild(card);
+    });
+    
+    // Initialize 3D carousel effect
+    initRingsCarousel();
+  }
+
+  function initRingsCarousel() {
+    const slider = document.getElementById("rings-carousel");
+    if (!slider) return;
+    
+    const cards = [...slider.querySelectorAll(".ring-card")];
+    const cardWidth = 220 + 10; // width + gap
+    const curveStrength = 30;
+    
+    function update() {
+      const scrollCenter = slider.scrollLeft + slider.clientWidth / 2;
+      cards.forEach((card, i) => {
+        const cardCenter = i * cardWidth + cardWidth / 2;
+        const dx = cardCenter - scrollCenter;
+        const angle = dx / 10;
+        const depth = -Math.abs(dx) / curveStrength;
+        card.style.transform = `
+          rotateY(${angle}deg)
+          translateZ(${depth}px)
+        `;
+      });
+    }
+    
+    update();
+    slider.addEventListener("scroll", update);
+    window.addEventListener("resize", update);
   }
 
   let currentProduct = null;
@@ -650,6 +716,7 @@ const sellerNumber = '918891093751';
 
     renderCombos();
     renderProducts();
+    renderRingsCarousel();
     renderCartItems();
     updateCartCount();
 
@@ -676,9 +743,3 @@ const sellerNumber = '918891093751';
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
   });
-
-
-
-
-
-
