@@ -23,7 +23,7 @@ const sellerNumber = '918891093751';
 
     // Necklaces
     {id: 7, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
-    {id: 8, name: 'Twin Butterfly Golden Chain Necklace', price: 232, images: ['assets/images/Twinbutterflygoldenchainnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Twinbutterflygoldenchainnecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Twin butterfly charms on a golden chain. Feminine and graceful.'},
+    {id: 8, name: 'Twin Butterfly Golden Chain Necklace', price: 232, images: ['assets/images/Twinbutterflygoldenchainnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Twinbutterflygoldenchainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Twin butterfly charms on a golden chain. Feminine and graceful.'},
     {id: 9, name: 'Butterfly Y Chain Necklace', price: 253, images: ['assets/images/Butterflyychainnecklace.JPG','assets/images/Goldheartnecklace1.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
     {id: 10, name: 'Butterfly Drop Necklace', price: 253, images: ['assets/images/Butterflydropnecklace.png'], inStock: false, qtyAvailable: 0, category: 'necklaces', description: 'Elegant butterfly drop pendant. Perfect for special occasions.'},
     {id: 11, name: 'Rose Gold Layered Necklace', price: 299, images: ['assets/images/Rosegoldlayerednecklace.JPG','assets/images/Rosegoldlayerednecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'},
@@ -45,7 +45,7 @@ const sellerNumber = '918891093751';
     {id: 24, name: 'Vema Rose Gold Earrings', price: 254, images: ['assets/images/Vemarosegoldearring.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant Vema design in rose gold. Perfect for any occasion.'},
     {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
     {id: 26, name: 'Halo Stud Earrings', price: 310, images: ['assets/images/Halostudearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Stunning halo design studs. Sparkle and shine.'},
-    {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'},
+    {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: false, qtyAvailable: 0, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'},
   
 
 
@@ -743,5 +743,6 @@ const sellerNumber = '918891093751';
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
   });
+
 
 
