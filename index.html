@@ -11,36 +11,64 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+  <!-- Main CSS -->
   <link href="main.css" rel="stylesheet">
-
-  
 </head>
 <body>
 
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+
+  <ul class="sidebar-menu">
+    <li>
+      <a href="#rings-special" onclick="toggleSidebar()">
+        <span>Rings</span>
+      </a>
+    </li>
+    <li>
+      <a href="#necklaces" onclick="toggleSidebar()">
+       
+        <span>Necklaces</span>
+      </a>
+    </li>
+    <li>
+      <a href="#earrings" onclick="toggleSidebar()">
+        
+        <span>Earrings</span>
+      </a>
+    </li>
+    <li>
+      <a href="#bracelets" onclick="toggleSidebar()">
+        
+        <span>Bracelets</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 <!-- NAVBAR -->
 <nav class="navbar">
-  
-      <div class="nav-left">
-        <button class="hamburger-btn" id="hamburger-btn">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
+  <div class="nav-left">
+    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
 
-      <div class="nav-center">
-        <div class="logo-container">
-          <img src="assets/images/logo.png" alt="IZAH Logo" class="logo-img">
-        </div>
-      </div>
+  <div class="nav-center">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="IZAH Logo" class="logo-img">
+    </div>
+  </div>
 
-      <div class="nav-right">
-        <div class="cart-badge">
-          <a class="nav-link p-0" style="color:#1a1a1a" href="#cartModal" data-bs-toggle="modal">
-            <i class="fa fa-shopping-bag"></i>
-          </a>
-          <span id="cart-count" class="cart-count" style="display:none">0</span>
-        </div>
-      </div>
+  <div class="nav-right">
+    <div class="cart-badge">
+      <a class="nav-link p-0" style="color:#1a1a1a" href="#cartModal" data-bs-toggle="modal" aria-label="Shopping Cart">
+        <i class="fa fa-shopping-bag"></i>
+      </a>
+      <span id="cart-count" class="cart-count" style="display:none">0</span>
     </div>
   </div>
 </nav>
@@ -52,44 +80,6 @@
     <span>10% OFF ₹299+ | 20% OFF ₹499+</span>
     <i class="fas fa-sparkles"></i>
   </div>
-</div>
-
-<!-- SIDEBAR MENU -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-<div class="sidebar-menu" id="sidebar-menu">
-  <div class="sidebar-header">
-    <h5 style="margin: 0; font-weight: 700;">Menu</h5>
-    <button class="sidebar-close" id="sidebar-close">
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-  <ul>
-    <li>
-      <a href="#combos" class="category-link" data-category="combos">
-        <i class="fas fa-fire"></i> Hot Deals
-      </a>
-    </li>
-    <li>
-      <a href="#necklaces" class="category-link" data-category="necklaces">
-        <i class="fas fa-gem"></i> Necklaces
-      </a>
-    </li>
-    <li>
-      <a href="#earrings" class="category-link" data-category="earrings">
-        <i class="fas fa-circle"></i> Earrings
-      </a>
-    </li>
-    <li>
-      <a href="#bracelets" class="category-link" data-category="bracelets">
-        <i class="fas fa-link"></i> Bracelets
-      </a>
-    </li>
-    <li>
-      <a href="#rings" class="category-link" data-category="rings">
-        <i class="fas fa-ring"></i> Rings
-      </a>
-    </li>
-  </ul>
 </div>
 
 <!-- HERO -->
@@ -108,31 +98,31 @@
       <div class="col-12">
         <div class="hero-carousel">
           <div class="carousel-item-custom active">
-            <img src="assets/images/Goldheartnecklace1.JPG" alt="Jewellery Collection 1">
+            <img src="assets/images/Goldheartnecklace1.JPG" alt="Gold Heart Necklace Collection">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Haloheartdoublelayerbracelet.JPG" alt="Jewellery Collection 2">
+            <img src="assets/images/Haloheartdoublelayerbracelet.JPG" alt="Halo Heart Bracelet Collection">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Cloverdoublechainnecklace.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Cloverdoublechainnecklace.JPG" alt="Clover Necklace Collection">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/allbracelets.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/allbracelets.JPG" alt="Bracelets Collection">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Flowerclusterearrings.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Flowerclusterearrings.JPG" alt="Flower Earrings Collection">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Bowsnakenecklace.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Bowsnakenecklace.JPG" alt="Bow Snake Necklace">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Goldenprismearrings.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Goldenprismearrings.JPG" alt="Golden Prism Earrings">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Minimalbutterflynecklace.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Minimalbutterflynecklace.JPG" alt="Minimal Butterfly Necklace">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Halostudearrings.JPG" alt="Jewellery Collection 3">
+            <img src="assets/images/Halostudearrings.JPG" alt="Halo Stud Earrings">
           </div>
         </div>
       </div>
@@ -143,7 +133,6 @@
 <!-- COMBOS & HOT DEALS SECTION -->
 <section id="combos" class="combo-section category-section">
   <div class="container">
-    
     <div id="combo-grid">
       <!-- Combo cards will be inserted here -->
     </div>
@@ -153,51 +142,50 @@
 <!-- SHOP GRID BY CATEGORIES -->
 <section id="shop" class="pt-3 pb-4">
   <div class="container">
-    <section id="shop" class="pt-3 pb-4">
-  <div class="container">
+    <!-- RINGS SPECIAL SECTION -->
     <section id="rings-special" class="rings-special-section">
-  <div class="container">
-    <div class="rings-header">
-      <h4 class="rings-title">
-        <i class="fas fa-ring"></i> Rings Collection
-      </h4>
-      <div class="rings-price-badge">
-        <span class="price-amount">₹99</span>
-        <span class="price-label">One Price • Zero Confusion</span>
+      <div class="rings-header">
+        <h4 class="rings-title">
+          <i class="fas fa-ring"></i> Rings Collection
+        </h4>
+        <div class="rings-price-badge">
+          <span class="price-amount">₹99</span>
+          <span class="price-label">One Price • Zero Confusion</span>
+        </div>
       </div>
-    </div>
+      
+      <div class="rings-carousel" id="rings-carousel">
+        <!-- Ring cards will be inserted here by JavaScript -->
+      </div>
+    </section>
     
-    <div class="rings-carousel" id="rings-carousel">
-      <!-- Ring cards will be inserted here by JavaScript -->
-    </div>
-  </div>
-    
+    <!-- NECKLACES -->
     <div id="necklaces" class="category-section">
       <h3 style="color:#1a1a1a;border-bottom:2px solid #ff69b4;display:inline-block;padding-bottom:6px">Necklaces</h3>
       <div class="product-grid"></div>
     </div>
 
+    <!-- EARRINGS -->
     <div id="earrings" class="category-section">
       <h3 style="color:#1a1a1a;border-bottom:2px solid #ff69b4;display:inline-block;padding-bottom:6px">Earrings</h3>
       <div class="product-grid"></div>
     </div>
 
+    <!-- BRACELETS -->
     <div id="bracelets" class="category-section">
       <h3 style="color:#1a1a1a;border-bottom:2px solid #ff69b4;display:inline-block;padding-bottom:6px">Bracelets</h3>
       <div class="product-grid"></div>
     </div>
-
-   
   </div>
 </section>
 
 <!-- CART MODAL -->
-<div class="modal fade" id="cartModal" tabindex="-1">
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
     <div class="modal-content" style="background:#fff;color:#1a1a1a;border:2px solid #ffc0cb">
       <div class="modal-header" style="border-bottom:1px solid #ffc0cb">
-        <h5 class="modal-title"><i class="fas fa-shopping-bag me-2"></i>Your Cart</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="cartModalLabel"><i class="fas fa-shopping-bag me-2"></i>Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div id="cart-items"></div>
@@ -224,7 +212,7 @@
         <button id="clear-cart" class="btn btn-outline-dark btn-sm">
           <i class="fas fa-trash"></i> Clear
         </button>
-        <a id="checkout-whatsapp" class="btn btn-accent flex-grow-1" target="_blank">
+        <a id="checkout-whatsapp" class="btn btn-accent flex-grow-1" target="_blank" rel="noopener">
           <i class="fab fa-whatsapp"></i> Checkout on WhatsApp
         </a>
       </div>
@@ -233,22 +221,22 @@
 </div>
 
 <!-- PRODUCT DETAIL MODAL -->
-<div class="modal fade product-modal" id="productModal" tabindex="-1">
+<div class="modal fade product-modal" id="productModal" tabindex="-1" aria-labelledby="productModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
     <div class="modal-content" style="background:#fff;color:#1a1a1a;border:2px solid #ffc0cb">
       <div class="modal-header" style="border-bottom:1px solid #ffc0cb">
         <h5 class="modal-title" id="productModalTitle"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="row">
           <div class="col-12">
             <div class="product-detail-carousel">
-              <img id="carousel-main-image" class="carousel-image" src="" alt="">
-              <button class="carousel-nav prev" onclick="changeImage(-1)">
+              <img id="carousel-main-image" class="carousel-image" src="" alt="Product Image">
+              <button class="carousel-nav prev" onclick="changeImage(-1)" aria-label="Previous Image">
                 <i class="fa fa-chevron-left"></i>
               </button>
-              <button class="carousel-nav next" onclick="changeImage(1)">
+              <button class="carousel-nav next" onclick="changeImage(1)" aria-label="Next Image">
                 <i class="fa fa-chevron-right"></i>
               </button>
               <div class="carousel-indicators" id="carousel-indicators"></div>
@@ -291,10 +279,10 @@
       <div class="col-6 mb-3">
         <h6 style="color:#1a1a1a; font-weight: 600; margin-bottom: 0.75rem; font-size: 0.95rem;">Follow</h6>
         <div>
-          <a href="https://wa.me/918891093751" target="_blank" class="social-icon" title="WhatsApp">
+          <a href="https://wa.me/918891093751" target="_blank" rel="noopener" class="social-icon" title="WhatsApp">
             <i class="fab fa-whatsapp"></i>
           </a>
-          <a href="https://www.instagram.com/jewels.byizahh" target="_blank" class="social-icon" title="Instagram">
+          <a href="https://www.instagram.com/jewels.byizahh" target="_blank" rel="noopener" class="social-icon" title="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -310,8 +298,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 
-
 </body>
 </html>
-
-
