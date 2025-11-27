@@ -1,5 +1,14 @@
 const sellerNumber = '918891093751';
 
+// Sidebar Toggle Function
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  
+  sidebar.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
   // Combo deals data   
   const combos = [
     
@@ -642,77 +651,7 @@ const sellerNumber = '918891093751';
   }
 
   // Hamburger Menu Toggle
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const sidebarMenu = document.getElementById('sidebar-menu');
-  const sidebarClose = document.getElementById('sidebar-close');
-  const sidebarOverlay = document.getElementById('sidebar-overlay');
-
-  function openSidebar() {
-    sidebarMenu.classList.add('active');
-    sidebarOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeSidebar() {
-    sidebarMenu.classList.remove('active');
-    sidebarOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  hamburgerBtn.addEventListener('click', openSidebar);
-  sidebarClose.addEventListener('click', closeSidebar);
-  sidebarOverlay.addEventListener('click', closeSidebar);
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const categoryLinks = document.querySelectorAll('.category-link');
-    
-    categoryLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        // Close sidebar first
-        closeSidebar();
-        
-        // Remove active class from all links
-        categoryLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-        
-        // Scroll to section with proper offset
-        setTimeout(() => {
-          const targetId = link.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-          if(targetSection) {
-            const headerHeight = 110; // navbar + discount banner + extra padding
-            const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            window.scrollTo({
-              top: targetPosition,
-              behavior: 'smooth'
-            });
-          }
-        }, 100); // Small delay to ensure sidebar closes first
-      });
-    });
-    
-    // Update active link on scroll
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('.category-section');
-      const scrollPos = window.scrollY + 120;
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        if(scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-          categoryLinks.forEach(link => {
-            link.classList.remove('active');
-            if(link.getAttribute('href') === `#${sectionId}`) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    });
+ 
 
     renderCombos();
     renderProducts();
@@ -742,7 +681,6 @@ const sellerNumber = '918891093751';
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
-  });
 
 
 
