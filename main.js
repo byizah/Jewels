@@ -31,8 +31,8 @@ function toggleSidebar() {
     {id: 6, name: 'Gold Double Layer Bracelet', price: 249, images: ['assets/images/Golddoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'},
 
     // Necklaces
-    {id: 7, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
-    {id: 8, name: 'Twin Butterfly Golden Chain Necklace', price: 232, images: ['assets/images/Twinbutterflygoldenchainnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Twinbutterflygoldenchainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Twin butterfly charms on a golden chain. Feminine and graceful.'},
+    {id: 7, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: false, qtyAvailable: 0, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
+    {id: 8, name: 'Twin Butterfly Golden Chain Necklace', price: 232, images: ['assets/images/Twinbutterflygoldenchainnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Twinbutterflygoldenchainnecklace1.png'], inStock:false, qtyAvailable: 0, category: 'necklaces', description: 'Twin butterfly charms on a golden chain. Feminine and graceful.'},
     {id: 9, name: 'Butterfly Y Chain Necklace', price: 253, images: ['assets/images/Butterflyychainnecklace.JPG','assets/images/Goldheartnecklace1.JPG'], inStock:false, qtyAvailable: 0, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
     {id: 10, name: 'Butterfly Drop Necklace', price: 253, images: ['assets/images/Butterflydropnecklace.png'], inStock: false, qtyAvailable: 0, category: 'necklaces', description: 'Elegant butterfly drop pendant. Perfect for special occasions.'},
     {id: 11, name: 'Rose Gold Layered Necklace', price: 299, images: ['assets/images/Rosegoldlayerednecklace.JPG','assets/images/Rosegoldlayerednecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'},
@@ -41,7 +41,7 @@ function toggleSidebar() {
     {id: 14, name: 'Elegant Bow Necklace', price: 334, images: ['assets/images/ElegantBownecklace.png'], inStock: false, qtyAvailable: 1, category: 'necklaces', description: 'Charming bow pendant necklace. Sweet and elegant.'},
     {id: 15, name: 'Clover Double Chain Necklace', price: 322, images: ['assets/images/Cloverdoublechainnecklace.JPG','assets/images/Cloverdoublechainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Lucky clover charm with double chain. Stylish and meaningful.'},
     {id: 16, name: 'Minimal Butterfly Necklace', price: 210, images: ['assets/images/Minimalbutterflynecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalbutterflynecklace1.png'], inStock: false, qtyAvailable: 2, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
-    {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: true, qtyAvailable:2 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
+    {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: false, qtyAvailable:1 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
   
     
     // Earrings
@@ -50,7 +50,7 @@ function toggleSidebar() {
     {id: 20, name: 'Flower Cluster Earrings', price: 159, images: ['assets/images/Flowerclusterearrings.JPG'], inStock: false, qtyAvailable: 9, category: 'earrings', description: 'Delicate flower cluster studs. Feminine and charming.'},
     {id: 21, name: 'Gold Huggie Hoop Earrings', price: 286, images: ['assets/images/Goldhuggiehoopearrings.JPG','assets/images/Goldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Classic gold huggie hoops. Versatile and stylish.'},
     {id: 22, name: 'Swirl Earrings', price: 149, images: ['assets/images/Swirlearrings.JPG','assets/images/Swirlearrings1.png'], inStock: false, qtyAvailable: 15, category: 'earrings', description: 'Unique swirl design. Modern and elegant.'},
-    {id: 23, name: 'Rose Gold Huggie Hoop Earrings', price: 286, images: ['assets/images/Rosegoldhuggiehoopearrings.JPG','assets/images/Rosegoldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Rose gold huggie hoops. Chic and sophisticated.'},
+    {id: 23, name: 'Rose Gold Huggie Hoop Earrings', price: 286, images: ['assets/images/Rosegoldhuggiehoopearrings.JPG','assets/images/Rosegoldhuggiehoopearrings1.JPG'], inStock:false, qtyAvailable: 0, category: 'earrings', description: 'Rose gold huggie hoops. Chic and sophisticated.'},
     {id: 24, name: 'Vema Rose Gold Earrings', price: 254, images: ['assets/images/Vemarosegoldearring.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant Vema design in rose gold. Perfect for any occasion.'},
     {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
     {id: 26, name: 'Halo Stud Earrings', price: 310, images: ['assets/images/Halostudearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Stunning halo design studs. Sparkle and shine.'},
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
