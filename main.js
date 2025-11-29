@@ -23,7 +23,7 @@ function toggleSidebar() {
     {id: 105, name: 'Starlet Glow Ring', price: 99, images: ['assets/images/star.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 5, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
     {id: 106, name: 'Divine Heart Ring', price: 99, images: ['assets/images/love.PNG','assets/images/allrings.JPG'], inStock: true, qtyAvailable: 3, category: 'rings', description: 'Cute heart design ring. Perfect gift option.'},
     // Bracelets
-    {id: 1, name: 'Gold Heart Double Layer Bracelet', price: 249, images: ['assets/images/Goldheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'},
+    {id: 1, name: 'Gold Heart Double Layer Bracelet', price: 249, images: ['assets/images/Goldheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock:false, qtyAvailable: 0, category: 'bracelets', description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'},
     {id: 2, name: 'Halo Heart Double Layer Bracelet', price: 249, images: ['assets/images/Haloheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Stunning halo heart design with double chain layers. A must-have accessory.'},
     {id: 3, name: 'Butterfly Gold Bracelet', price: 249, images: ['assets/images/Butterflygoldbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'},
     {id: 4, name: 'Elegant Star Bracelet', price: 249, images: ['assets/images/Elegantstarbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 3, category: 'bracelets', description: 'Minimalist star charm bracelet. Perfect for those who love subtle elegance.'},
@@ -41,7 +41,7 @@ function toggleSidebar() {
     {id: 14, name: 'Elegant Bow Necklace', price: 334, images: ['assets/images/ElegantBownecklace.png'], inStock: false, qtyAvailable: 1, category: 'necklaces', description: 'Charming bow pendant necklace. Sweet and elegant.'},
     {id: 15, name: 'Clover Double Chain Necklace', price: 322, images: ['assets/images/Cloverdoublechainnecklace.JPG','assets/images/Cloverdoublechainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Lucky clover charm with double chain. Stylish and meaningful.'},
     {id: 16, name: 'Minimal Butterfly Necklace', price: 210, images: ['assets/images/Minimalbutterflynecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalbutterflynecklace1.png'], inStock: false, qtyAvailable: 2, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
-    {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
+    {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: false, qtyAvailable:0 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
   
     
     // Earrings
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
