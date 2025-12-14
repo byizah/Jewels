@@ -25,9 +25,9 @@ function toggleSidebar() {
     // Bracelets
     {id: 1, name: 'Gold Heart Double Layer Bracelet', price: 249, images: ['assets/images/Goldheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock:false, qtyAvailable: 0, category: 'bracelets', description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'},
     {id: 2, name: 'Halo Heart Double Layer Bracelet', price: 249, images: ['assets/images/Haloheartdoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Stunning halo heart design with double chain layers. A must-have accessory.'},
-    {id: 3, name: 'Butterfly Gold Bracelet', price: 249, images: ['assets/images/Butterflygoldbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'},
-    {id: 4, name: 'Elegant Star Bracelet', price: 249, images: ['assets/images/Elegantstarbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 3, category: 'bracelets', description: 'Minimalist star charm bracelet. Perfect for those who love subtle elegance.'},
-    {id: 5, name: 'Star Double Layered Gold Bracelet', price: 249, images: ['assets/images/Stardoublelayeredgolfbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Double-layered design with star charm. Versatile and stylish.'},
+    {id: 3, name: 'Butterfly Gold Bracelet', price: 249, images: ['assets/images/Butterflygoldbracelet.JPG','assets/images/allbracelets.JPG'], inStock: false, qtyAvailable: 1, category: 'bracelets', description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'},
+    {id: 4, name: 'Elegant Star Bracelet', price: 249, images: ['assets/images/Elegantstarbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 2, category: 'bracelets', description: 'Minimalist star charm bracelet. Perfect for those who love subtle elegance.'},
+    {id: 5, name: 'Star Double Layered Gold Bracelet', price: 249, images: ['assets/images/Stardoublelayeredgolfbracelet.JPG','assets/images/allbracelets.JPG'], inStock: false, qtyAvailable: 1, category: 'bracelets', description: 'Double-layered design with star charm. Versatile and stylish.'},
     {id: 6, name: 'Gold Double Layer Bracelet', price: 249, images: ['assets/images/Golddoublelayerbracelet.JPG','assets/images/allbracelets.JPG'], inStock: true, qtyAvailable: 1, category: 'bracelets', description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'},
 
     // Necklaces
@@ -51,8 +51,8 @@ function toggleSidebar() {
     {id: 21, name: 'Gold Huggie Hoop Earrings', price: 286, images: ['assets/images/Goldhuggiehoopearrings.JPG','assets/images/Goldhuggiehoopearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Classic gold huggie hoops. Versatile and stylish.'},
     {id: 22, name: 'Swirl Earrings', price: 149, images: ['assets/images/Swirlearrings.JPG','assets/images/Swirlearrings1.png'], inStock: false, qtyAvailable: 15, category: 'earrings', description: 'Unique swirl design. Modern and elegant.'},
     {id: 23, name: 'Rose Gold Huggie Hoop Earrings', price: 286, images: ['assets/images/Rosegoldhuggiehoopearrings.JPG','assets/images/Rosegoldhuggiehoopearrings1.JPG'], inStock:false, qtyAvailable: 0, category: 'earrings', description: 'Rose gold huggie hoops. Chic and sophisticated.'},
-    {id: 24, name: 'Vema Rose Gold Earrings', price: 254, images: ['assets/images/Vemarosegoldearring.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Elegant Vema design in rose gold. Perfect for any occasion.'},
-    {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: true, qtyAvailable: 1, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
+    {id: 24, name: 'Vema Rose Gold Earrings', price: 254, images: ['assets/images/Vemarosegoldearring.JPG'], inStock: false, qtyAvailable: 1, category: 'earrings', description: 'Elegant Vema design in rose gold. Perfect for any occasion.'},
+    {id: 25, name: 'Pearl Elegant Rose Gold Earrings', price: 269, images: ['assets/images/Pearlelegantrosegoldearrings.JPG','assets/images/Pearlelegantrosegoldearrings1.JPG'], inStock: false, qtyAvailable: 1, category: 'earrings', description: 'Beautiful pearl studs in rose gold. Classic elegance.'},
     {id: 26, name: 'Halo Stud Earrings', price: 310, images: ['assets/images/Halostudearrings.JPG'], inStock: true, qtyAvailable: 2, category: 'earrings', description: 'Stunning halo design studs. Sparkle and shine.'},
     {id: 27, name: 'Vema Silver Earrings', price: 254, images: ['assets/images/Vemasilverearrings.JPG'], inStock: false, qtyAvailable: 0, category: 'earrings', description: 'Elegant Vema design in silver. Versatile and beautiful.'},
   
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
