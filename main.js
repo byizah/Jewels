@@ -41,7 +41,7 @@ function toggleSidebar() {
     {id: 14, name: 'Royal green charm necklace', price: 349, images: ['assets/images/RoyalGreenCharmnecklace.jpg','assets/images/RoyalGreenCharmnecklace1.JPG','assets/images/RoyalGreenCharmnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with dangling green baguette-cut gemstones and small round green stones.'},
     {id: 15, name: 'Clover Double Chain Necklace', price: 322, images: ['assets/images/Cloverdoublechainnecklace.JPG','assets/images/Cloverdoublechainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Lucky clover charm with double chain. Stylish and meaningful.'},
     {id: 16, name: 'Minimal Butterfly Necklace', price: 210, images: ['assets/images/Minimalbutterflynecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalbutterflynecklace1.png'], inStock: false, qtyAvailable: 2, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
-    {id: 17, name: 'Minimal Heart Necklace', price: 210, images: ['assets/images/Minimalheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Minimalheartnecklace1.png'], inStock: false, qtyAvailable:0 , category: 'necklaces', description: 'Delicate heart pendant. Classic and versatile.'},
+    {id: 17, name: 'Ivory Tear Drop Necklace', price: 199, images: ['assets/images/IvoryTearDropnecklace.jpg','assets/images/IvoryTearDropnecklac1.jpg','assets/images/IvoryTearDropnecklace2.JPG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: ' delicate gold-tone layered chain necklace with a small teardrop-shaped white/opalescent stone pendant.'},
   
     
     // Earrings
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
