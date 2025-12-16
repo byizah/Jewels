@@ -32,7 +32,7 @@ function toggleSidebar() {
 
     // Necklaces
     {id: 301, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
-    {id: 302, name: 'Mint grace pendant necklace', price: 199, images: ['assets/images/Mintgracependantnecklace.HEIC','assets/images/Mintgracependantnecklace1.JPG','assets/images/Mintgracependantnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with a small, rounded square pendant featuring a smooth teal/blue-green stone.'},
+    {id: 302, name: 'Mint grace pendant necklace', price: 199, images: ['assets/images/Mintgracependantnecklace20.jpg','assets/images/Mintgracependantnecklace1.JPG','assets/images/Mintgracependantnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with a small, rounded square pendant featuring a smooth teal/blue-green stone.'},
     {id: 303, name: 'Black Aura Necklace', price: 199, images: ['assets/images/BlackAuranecklace1.JPG','assets/images/BlackAuranecklace.JPG','assets/images/BlackAuranecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
     {id: 304,name: 'Royal White Charm Necklace', price: 349, images: ['assets/images/RoyalWhiteCharmnecklace.jpg','assets/images/RoyalWhiteCharmnecklace1.JPG','assets/images/RoyalWhiteCharmnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Elegant butterfly drop pendant. Perfect for special occasions.'},
     {id: 305, name: 'Rose Gold Layered Necklace', price: 299, images: ['assets/images/Rosegoldlayerednecklace.JPG','assets/images/Rosegoldlayerednecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'},
@@ -701,6 +701,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
