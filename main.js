@@ -40,8 +40,8 @@ function toggleSidebar() {
     {id: 307, name: 'Double Layered Snake Chain Necklace', price: 252, images: ['assets/images/Doublelayeredsnakechainnecklace.JPG','assets/images/Doublelayeredsnakechainnecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Sleek double-layered snake chain. Minimalist elegance.'},
     {id: 308, name: 'Royal green charm necklace', price: 349, images: ['assets/images/RoyalGreenCharmnecklace.jpg','assets/images/RoyalGreenCharmnecklace1.JPG','assets/images/RoyalGreenCharmnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with dangling green baguette-cut gemstones and small round green stones.'},
     {id: 309, name: 'Clover Double Chain Necklace', price: 322, images: ['assets/images/Cloverdoublechainnecklace.JPG','assets/images/Cloverdoublechainnecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Lucky clover charm with double chain. Stylish and meaningful.'},
-    {id: 310, name: 'Rainbow gem necklace', price: 369, images: ['assets/images/RainbowDropnecklace.jpg','assets/images/RainbowDropnecklace1.jpg','assets/images/RainbowDropnecklace2.jpg'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Minimalist butterfly pendant. Simple and beautiful.'},
-    {id: 311, name: 'Ivory Tear Drop Necklace', price: 199, images: ['assets/images/IvoryTearDropnecklace.jpg','assets/images/IvoryTearDropnecklac1.jpg','assets/images/IvoryTearDropnecklace2.JPG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: ' A gold-tone chain necklace adorned with multiple small, dangling bezel-set gemstones of various colors. '},
+    {id: 310, name: 'Rainbow gem necklace', price: 369, images: ['assets/images/RainbowDropnecklace.jpg','assets/images/RainbowDropnecklace1.jpg','assets/images/RainbowDropnecklace2.jpg'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace adorned with multiple small, dangling bezel-set gemstones of various colors.'},
+    {id: 311, name: 'Ivory Tear Drop Necklace', price: 199, images: ['assets/images/IvoryTearDropnecklace.jpg','assets/images/IvoryTearDropnecklac1.jpg','assets/images/IvoryTearDropnecklace2.JPG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'A delicate gold-tone layered chain necklace with a small teardrop-shaped white/opalescent stone pendant.  '},
   
     
     // Earrings
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
