@@ -33,7 +33,7 @@ function toggleSidebar() {
     // Necklaces
     {id: 7, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
     {id: 8, name: 'Twin Butterfly Golden Chain Necklace', price: 232, images: ['assets/images/Twinbutterflygoldenchainnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Twinbutterflygoldenchainnecklace1.png'], inStock:false, qtyAvailable: 0, category: 'necklaces', description: 'Twin butterfly charms on a golden chain. Feminine and graceful.'},
-    {id: 9, name: 'Butterfly Y Chain Necklace', price: 253, images: ['assets/images/Butterflyychainnecklace.JPG','assets/images/Goldheartnecklace1.JPG'], inStock:false, qtyAvailable: 0, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
+    {id: 9, name: 'Black Aura Necklace', price: 199, images: ['assets/images/Butterflyychainnecklace.JPG','assets/images/Goldheartnecklace1.JPG'], inStock:false, qtyAvailable: 0, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
     {id: 10, name: 'Butterfly Drop Necklace', price: 253, images: ['assets/images/Butterflydropnecklace.png'], inStock: false, qtyAvailable: 0, category: 'necklaces', description: 'Elegant butterfly drop pendant. Perfect for special occasions.'},
     {id: 11, name: 'Rose Gold Layered Necklace', price: 299, images: ['assets/images/Rosegoldlayerednecklace.JPG','assets/images/Rosegoldlayerednecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'},
     {id: 12, name: 'Blue Aura Necklace', price: 189, images: ['assets/images/BlueAuranecklace.jpg','assets/images/BlueAuranecklace1.jpg'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A delicate silver-tone necklace featuring a shimmering blue gemstone, designed to add a touch of elegant simplicity to any look.'},
@@ -681,6 +681,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
