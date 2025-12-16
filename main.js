@@ -33,8 +33,8 @@ function toggleSidebar() {
     // Necklaces
     {id: 301, name: 'Gold Heart Necklace', price: 249, images: ['assets/images/Goldheartnecklace.JPG','assets/images/Goldheartnecklace1.JPG','assets/images/Goldheartnecklace2.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'},
     {id: 302, name: 'Mint grace pendant necklace', price: 199, images: ['assets/images/Mintgracependantnecklace20.jpg','assets/images/Mintgracependantnecklace1.JPG','assets/images/Mintgracependantnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with a small, rounded square pendant featuring a smooth teal/blue-green stone.'},
-    {id: 303, name: 'Black Aura Necklace', price: 199, images: ['assets/images/BlackAuranecklace1.JPG','assets/images/BlackAuranecklace.JPG','assets/images/BlackAuranecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Trendy Y-chain design with butterfly pendant. Makes a statement.'},
-    {id: 304,name: 'Royal White Charm Necklace', price: 349, images: ['assets/images/RoyalWhiteCharmnecklace.jpg','assets/images/RoyalWhiteCharmnecklace1.JPG','assets/images/RoyalWhiteCharmnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Elegant butterfly drop pendant. Perfect for special occasions.'},
+    {id: 303, name: 'Black Aura Necklace', price: 199, images: ['assets/images/BlackAuranecklace1.JPG','assets/images/BlackAuranecklace.JPG','assets/images/BlackAuranecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A minimalist gold-tone necklace featuring a sleek black stone pendant, perfect for adding a subtle, modern touch to everyday outfits.'},
+    {id: 304,name: 'Royal White Charm Necklace', price: 349, images: ['assets/images/RoyalWhiteCharmnecklace.jpg','assets/images/RoyalWhiteCharmnecklace1.JPG','assets/images/RoyalWhiteCharmnecklace2.JPG'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A gold-tone chain necklace with dangling clear baguette-cut and small round cubic zirconia stones.'},
     {id: 305, name: 'Rose Gold Layered Necklace', price: 299, images: ['assets/images/Rosegoldlayerednecklace.JPG','assets/images/Rosegoldlayerednecklace1.png'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'},
     {id: 306, name: 'Blue Aura Necklace', price: 189, images: ['assets/images/BlueAuranecklace.jpg','assets/images/BlueAuranecklace1.jpg','assets/images/BlueAuranecklace2.jpg'], inStock: true, qtyAvailable: 1, category: 'necklaces', description: 'A delicate silver-tone necklace featuring a shimmering blue gemstone, designed to add a touch of elegant simplicity to any look.'},
     {id: 307, name: 'Double Layered Snake Chain Necklace', price: 252, images: ['assets/images/Doublelayeredsnakechainnecklace.JPG','assets/images/Doublelayeredsnakechainnecklace1.png'], inStock: true, qtyAvailable: 2, category: 'necklaces', description: 'Sleek double-layered snake chain. Minimalist elegance.'},
@@ -701,6 +701,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
