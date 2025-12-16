@@ -57,7 +57,7 @@ function toggleSidebar() {
     {id: 324, name: 'Ivory blossom pendant', price:199, images: ['assets/images/ivoryblossompendant.jpg','assets/images/ivoryblossompendant1.jpg','assets/images/ivory blossom.PNG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'A delicate gold-tone necklace featuring a floral-etched pendant with soft pastel details, designed to add a vintage-inspired elegance to everyday wear.'},
     {id: 325, name: 'Crystal frame necklace', price:199, images: ['assets/images/crystalframenecklace.jpg','assets/images/crystalframenecklace1.jpg','assets/images/crystal frame.PNG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'Gold-tone necklace with a clear crystal pendant for timeless elegance. '},
     {id: 326, name: 'Purple Recta Necklace', price:199, images: ['assets/images/purplerectanecklace.jpg','assets/images/purplerectanecklace1.jpg','assets/images/purple recta.PNG'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'Minimal gold-tone necklace with a lavender gemstone pendant.'},
-    {id: 327, name: 'Heart  Necklace', price:199, images: ['assets/images/heart pendant 1.jpeg','assets/images/heart pendant 2.jpeg','assets/images/heart pendant 3.jpeg'], inStock: true, qtyAvailable:1 , category: 'necklaces', description: 'Gold-tone heart pendant necklace with a sleek, minimal finish.'},
+    
     
     
     
@@ -701,6 +701,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
