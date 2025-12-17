@@ -587,7 +587,12 @@ function toggleSidebar() {
     container.insertAdjacentHTML('beforeend', addressFormHTML);
 
     const discount = calculateDiscount(subtotal);
-    const total = subtotal - discount.amount;
+
+// Apply shipping only if cart has items
+const shipping = currentCart.length > 0 ? SHIPPING_CHARGE : 0;
+
+const total = subtotal - discount.amount + shipping;
+
 
     document.getElementById('cart-subtotal').innerText = fmtINR(subtotal);
     
@@ -702,6 +707,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
