@@ -97,10 +97,10 @@ const products = [
     },
     {
         id: 3,
-        name: 'Butterfly Gold Bracelet',
-        price: 249,
-        images: ['assets/images/Butterflygoldbracelet.JPG', 'assets/images/allbracelets.JPG'],
-        inStock: false,
+        name: 'Trinity multi bracelet',
+        price: 399,
+        images: ['assets/images/trinitymultibracelet.jpg', 'assets/images/trinitymultibracelet1.jpg'],
+        inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'
@@ -117,10 +117,10 @@ const products = [
     },
     {
         id: 5,
-        name: 'Star Double Layered Gold Bracelet',
+        name: 'Roman race bracelet',
         price: 249,
         images: ['assets/images/Stardoublelayeredgolfbracelet.JPG', 'assets/images/allbracelets.JPG'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Double-layered design with star charm. Versatile and stylish.'
@@ -135,6 +135,87 @@ const products = [
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
     },
+    {
+        id: 7,
+        name: 'Rose gold roman bracelets ',
+        price: 269,
+        images: ['assets/images/rosegoldromanbracelet.jpg', 'assets/images/rosegoldromanbracelets1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 8,
+        name: 'Gold ivory bracelet',
+        price: 349,
+        images: ['assets/images/goldivorybracelet.jpg', 'assets/images/goldivorybracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 9,
+        name: 'Lyra rose gold bracelet',
+        price: 299,
+        images: ['assets/images/lyrarosegoldbracelet.jpg', 'assets/images/lyrarosegoldbracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 10,
+        name: 'Seren rose gold bracelet',
+        price: 299,
+        images: ['assets/images/serenrosegoldbracelet.jpg', 'assets/images/serenrosegoldbracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 11,
+        name: 'Maze line rose gold bracelet',
+        price: 269,
+        images: ['assets/images/mazelinerosegoldbracelet.jpg', 'assets/images/mazelinerosegoldbracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 12,
+        name: 'Gold stone bracelet',
+        price: 179,
+        images: ['assets/images/goldstonebracelet.jpg', 'assets/images/goldstonebracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 2,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 13,
+        name: 'Midnight clover bracelet',
+        price: 249,
+        images: ['assets/images/midnightcloverbracelet.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+    {
+        id: 14,
+        name: 'Golden curve bracelet',
+        price: 229,
+        images: ['assets/images/goldencurvebracelet.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'bracelets',
+        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+    },
+   
 
     // Necklaces
     {
@@ -885,5 +966,6 @@ renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
+
 
 
