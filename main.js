@@ -600,6 +600,36 @@ const products = [
         category: 'earrings',
         description: 'Elegant Vema design in silver. Versatile and beautiful.'
     },
+    {
+        id: 212,
+        name: 'Rose red drops  Earrings ',
+        price: 169,
+        images: ['assets/images/rosereddrops.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Elegant Vema design in silver. Versatile and beautiful.'
+    },
+    {
+        id: 213,
+        name: 'Locket Love  Earrings ',
+        price: 116,
+        images: ['assets/images/locketloveearring.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Elegant Vema design in silver. Versatile and beautiful.'
+    },
+    {
+        id: 214,
+        name: 'Gold Recta Earrings ',
+        price: 129,
+        images: ['assets/images/goldrectaearring.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Elegant Vema design in silver. Versatile and beautiful.'
+    },
 ];
 
 let cart = [];
@@ -976,6 +1006,7 @@ renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
+
 
 
 
