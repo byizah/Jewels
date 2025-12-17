@@ -492,30 +492,30 @@ const products = [
     // Earrings
     {
         id: 201,
-        name: 'Rose Gold Sphere Earrings',
-        price: 342,
-        images: ['assets/images/Rosegoldsphereearrings.JPG', 'assets/images/Rosegoldsphereearrings1.JPG'],
-        inStock: false,
-        qtyAvailable: 0,
+        name: 'Crescent white earrings ',
+        price: 349,
+        images: ['assets/images/crescentwhiteearrings.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'
     },
     {
         id: 202,
-        name: 'Golden Prism Earrings',
-        price: 149,
-        images: ['assets/images/Goldenprismearrings.JPG'],
-        inStock: false,
-        qtyAvailable: 10,
+        name: 'Gold rose studs',
+        price: 99,
+        images: ['assets/images/goldrosestuds.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Geometric prism design in gold. Modern and eye-catching.'
     },
     {
         id: 203,
-        name: 'Flower Cluster Earrings',
-        price: 159,
-        images: ['assets/images/Flowerclusterearrings.JPG'],
-        inStock: false,
+        name: 'Heart Enamel earrings',
+        price: 129,
+        images: ['assets/images/heartenamelearrings.jpg'],
+        inStock: true,
         qtyAvailable: 9,
         category: 'earrings',
         description: 'Delicate flower cluster studs. Feminine and charming.'
@@ -532,30 +532,30 @@ const products = [
     },
     {
         id: 205,
-        name: 'Swirl Earrings',
-        price: 149,
-        images: ['assets/images/Swirlearrings.JPG', 'assets/images/Swirlearrings1.png'],
-        inStock: false,
-        qtyAvailable: 15,
+        name:'Dangle stud',
+        price: 109,
+        images: ['assets/images/danglestud.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Unique swirl design. Modern and elegant.'
     },
     {
         id: 206,
-        name: 'Rose Gold Huggie Hoop Earrings',
-        price: 286,
-        images: ['assets/images/Rosegoldhuggiehoopearrings.JPG', 'assets/images/Rosegoldhuggiehoopearrings1.JPG'],
-        inStock: false,
-        qtyAvailable: 0,
+        name: 'Pear petal earrings ',
+        price: 129,
+        images: ['assets/images/pearpetalearrings.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Rose gold huggie hoops. Chic and sophisticated.'
     },
     {
         id: 207,
-        name: 'Vema Rose Gold Earrings',
-        price: 254,
-        images: ['assets/images/Vemarosegoldearring.JPG'],
-        inStock: false,
+        name: 'Gold pepper hoops',
+        price: 119,
+        images: ['assets/images/goldpepperhoops.jpg'],
+        inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Elegant Vema design in rose gold. Perfect for any occasion.'
@@ -966,6 +966,7 @@ renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
+
 
 
 
