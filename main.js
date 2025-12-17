@@ -654,11 +654,7 @@ function calculateDiscount(subtotal) {
             rate: 0.15,
             amount: Math.round(subtotal * 0.15)
         };
-    } else if (subtotal >= 299) {
-        return {
-            rate: 0.10,
-            amount: Math.round(subtotal * 0.10)
-        };
+    
     }
     return {
         rate: 0,
