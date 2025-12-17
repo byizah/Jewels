@@ -77,11 +77,11 @@ const products = [
     // Bracelets
     {
         id: 1,
-        name: 'Gold Heart Double Layer Bracelet',
-        price: 249,
-        images: ['assets/images/Goldheartdoublelayerbracelet.JPG', 'assets/images/allbracelets.JPG'],
-        inStock: false,
-        qtyAvailable: 0,
+        name: 'Hexagon bracelet',
+        price: 379,
+        images: ['assets/images/hexagonbracelet.jpg', 'assets/images/hexagonbracelet1.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'bracelets',
         description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'
     },
@@ -885,4 +885,5 @@ renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
+
 
