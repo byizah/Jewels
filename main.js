@@ -632,382 +632,160 @@ const products = [
     },
 ];
 
+/* ================= Cart ================= */
 let cart = [];
 
-// Address form data
-let addressForm = {
-    fullName: '',
-    phone: '',
-    houseNo: '',
-    street: '',
-    locality: '',
-    city: '',
-    state: '',
-    pinCode: ''
-};
+const fmtINR = n => '₹' + n;
 
-const fmtINR = n => '₹' + n.toString();
-
+/* ================= Discount ================= */
 function calculateDiscount(subtotal) {
-    if (subtotal >= 499) {
-        return {
-            rate: 0.15,
-            amount: Math.round(subtotal * 0.15)
-        };
-    } else if (subtotal >= 299) {
-        return {
-            rate: 0.10,
-            amount: Math.round(subtotal * 0.10)
-        };
-    }
-    return {
-        rate: 0,
-        amount: 0
-    };
+    if (subtotal >= 499) return { rate: 0.15, amount: Math.round(subtotal * 0.15) };
+    if (subtotal >= 299) return { rate: 0.10, amount: Math.round(subtotal * 0.10) };
+    return { rate: 0, amount: 0 };
 }
 
-function renderCombos() {
-    const grid = document.getElementById('combo-grid');
-    grid.innerHTML = '';
-
-    combos.forEach(combo => {
-        const col = document.createElement('div');
-        col.className = 'mb-3';
-        col.innerHTML = `
-            <div class="combo-card" onclick="openComboDetail('${combo.id}')">
-                <img src="${combo.image}" alt="${combo.name}">
-                <div class="combo-card-body">
-                    <div class="combo-title">${combo.name}</div>
-                    <div class="combo-description">${combo.description}</div>
-                    <div class="combo-pricing">
-                        <span class="combo-original-price">${fmtINR(combo.originalPrice)}</span>
-                        <span class="combo-sale-price">${fmtINR(combo.salePrice)}</span>
-                        <span class="combo-savings">${combo.discount}</span>
-                    </div>
-                    <button class="btn-view-product-combo w-100" onclick="event.stopPropagation(); openComboDetail('${combo.id}')">
-                        View
-                    </button>
-                </div>
-            </div>
-        `;
-        grid.appendChild(col);
-    });
-}
-
-function openComboDetail(comboId) {
-    const combo = combos.find(c => c.id === comboId);
-    if (!combo) return;
-
-    currentProduct = {
-        id: comboId,
-        name: combo.name,
-        price: combo.salePrice,
-        images: [combo.image],
-        description: combo.description,
-        inStock: combo.inStock,
-        qtyAvailable: 10,
-        isCombo: false,
-        originalPrice: combo.originalPrice,
-        discount: combo.discount
-    };
-
-    currentImageIndex = 0;
-
-    document.getElementById('productModalTitle').innerText = combo.name;
-    document.getElementById('detail-name').innerText = combo.name;
-    document.getElementById('detail-price').innerHTML = `
-        <span style="text-decoration: line-through; color: var(--muted); font-size: 1rem; margin-right: 8px;">${fmtINR(combo.originalPrice)}</span>
-        <span style="color: var(--accent-dark);">${fmtINR(combo.salePrice)}</span>
-        <span style="background: white; color:rgb(0, 110, 7); padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; margin-left: 8px;">${combo.discount}</span>
-    `;
-    document.getElementById('detail-description').innerText = combo.description;
-
-    const stockDiv = document.getElementById('detail-stock');
-    stockDiv.innerHTML = '';
-
-    const actionsDiv = document.getElementById('detail-actions');
-    if (combo.inStock) {
-        actionsDiv.innerHTML = `
-            <div class="d-flex align-items-center gap-2 mb-3 justify-content-center">
-                <button class="btn-qty-classic" onclick="adjustModalQty(-1)">−</button>
-                <input type="number" class="form-control form-control-sm text-center" id="modal-qty" value="1" min="1" max="10" style="width:60px;font-weight:700" readonly>
-                <button class="btn-qty-classic" onclick="adjustModalQty(1)">+</button>
-            </div>
-            <button class="btn btn-accent w-100" onclick="addToCartFromModal()">
-                <i class="fa fa-shopping-bag"></i> Add to Cart
-            </button>
-        `;
-    } else {
-        actionsDiv.innerHTML = `<button class="btn btn-secondary w-100" disabled>Sold Out</button>`;
-    }
-
-    updateCarouselImages();
-
-    const productModal = new bootstrap.Modal(document.getElementById('productModal'));
-    productModal.show();
-}
-
+/* ================= Products ================= */
 function renderProducts() {
-    const categories = ['necklaces', 'earrings', 'bracelets', 'rings'];
+    const categories = ['necklaces','earrings','bracelets','rings'];
 
     categories.forEach(cat => {
         const section = document.querySelector(`#${cat} .product-grid`);
         if (!section) return;
 
         section.innerHTML = '';
-        const categoryProducts = products.filter(p => p.category === cat);
-
-        categoryProducts.forEach(p => {
-            const soldClass = !p.inStock ? 'img-sold' : '';
-            const soldBadge = !p.inStock ? '<div class="sold-overlay">Sold Out</div>' : '';
-
-            const card = document.createElement('div');
-            card.innerHTML = `
+        products.filter(p => p.category === cat).forEach(p => {
+            section.innerHTML += `
                 <div class="card shadow-sm">
-                    <div style="position:relative">
-                        <img src="${p.images[0]}" class="card-img-top ${soldClass}" alt="${p.name}">
-                        ${soldBadge}
-                    </div>
+                    <img src="${p.images[0]}" class="card-img-top">
                     <div class="card-body text-center">
                         <div class="name">${p.name}</div>
-                        <div class="price mb-2">${fmtINR(p.price)}</div>
-                        <button class="btn-view-product mt-2" onclick="openProductDetail(${p.id})">
-                            View
-                        </button>
+                        <div class="price">${fmtINR(p.price)}</div>
+                        <button class="btn-view-product mt-2" onclick="openProductDetail(${p.id})">View</button>
                     </div>
                 </div>
             `;
-            section.appendChild(card);
         });
     });
-}
-
-function renderRingsCarousel() {
-    const carousel = document.getElementById('rings-carousel');
-    if (!carousel) return;
-
-    carousel.innerHTML = '';
-    const ringProducts = products.filter(p => p.category === 'rings');
-
-    ringProducts.forEach(ring => {
-        const card = document.createElement('div');
-        card.className = 'ring-card';
-        card.onclick = () => openProductDetail(ring.id);
-        card.innerHTML = `
-            <img src="${ring.images[0]}" alt="${ring.name}
-        ">
-            <div class="ring-card-overlay">
-                <div class="ring-card-name">${ring.name}</div>
-                <div class="ring-card-price">${fmtINR(ring.price)}</div>
-            </div>
-        `;
-        carousel.appendChild(card);
-    });
-
-    initRingsCarousel();
-}
-
-function initRingsCarousel() {
-    const slider = document.getElementById('rings-carousel');
-    if (!slider) return;
-
-    const cards = [...slider.querySelectorAll('.ring-card')];
-    const cardWidth = 230;
-    const curveStrength = 30;
-
-    function update() {
-        const center = slider.scrollLeft + slider.clientWidth / 2;
-
-        cards.forEach((card, i) => {
-            const cardCenter = i * cardWidth + cardWidth / 2;
-            const dx = cardCenter - center;
-            const angle = dx / 10;
-            const depth = -Math.abs(dx) / curveStrength;
-
-            card.style.transform = `rotateY(${angle}deg) translateZ(${depth}px)`;
-        });
-    }
-
-    update();
-    slider.addEventListener('scroll', update);
-    window.addEventListener('resize', update);
 }
 
 /* ================= Product Modal ================= */
-
 let currentProduct = null;
-let currentImageIndex = 0;
 
-function openProductDetail(productId) {
-    const product = products.find(p => p.id === productId);
-    if (!product) return;
+function openProductDetail(id) {
+    currentProduct = products.find(p => p.id === id);
+    if (!currentProduct) return;
 
-    currentProduct = product;
-    currentImageIndex = 0;
+    document.getElementById('detail-name').innerText = currentProduct.name;
+    document.getElementById('detail-price').innerText = fmtINR(currentProduct.price);
+    document.getElementById('detail-description').innerText = currentProduct.description;
+    document.getElementById('carousel-main-image').src = currentProduct.images[0];
 
-    document.getElementById('productModalTitle').innerText = product.name;
-    document.getElementById('detail-name').innerText = product.name;
-    document.getElementById('detail-price').innerText = fmtINR(product.price);
-    document.getElementById('detail-description').innerText = product.description;
-
-    const actionsDiv = document.getElementById('detail-actions');
-
-    if (product.inStock) {
-        actionsDiv.innerHTML = `
-            <div class="d-flex align-items-center gap-2 mb-3 justify-content-center">
-                <button class="btn-qty-classic" onclick="adjustModalQty(-1)">−</button>
-                <input type="number" id="modal-qty" value="1" min="1" max="${product.qtyAvailable}"
-                    class="form-control form-control-sm text-center"
-                    style="width:60px;font-weight:700" readonly>
-                <button class="btn-qty-classic" onclick="adjustModalQty(1)">+</button>
-            </div>
-            <button class="btn btn-accent w-100" onclick="addToCartFromModal()">
-                <i class="fa fa-shopping-bag"></i> Add to Cart
-            </button>
-        `;
-    } else {
-        actionsDiv.innerHTML = `<button class="btn btn-secondary w-100" disabled>Sold Out</button>`;
-    }
-
-    updateCarouselImages();
+    document.getElementById('detail-actions').innerHTML = `
+        <div class="d-flex justify-content-center mb-2">
+            <button onclick="adjustModalQty(-1)">−</button>
+            <input id="modal-qty" value="1" readonly style="width:50px;text-align:center">
+            <button onclick="adjustModalQty(1)">+</button>
+        </div>
+        <button class="btn btn-accent w-100" onclick="addToCartFromModal()">Add to Cart</button>
+    `;
 
     new bootstrap.Modal(document.getElementById('productModal')).show();
 }
 
-function updateCarouselImages() {
-    if (!currentProduct) return;
-
-    document.getElementById('carousel-main-image').src =
-        currentProduct.images[currentImageIndex];
-
-    const indicators = document.getElementById('carousel-indicators');
-    indicators.innerHTML = '';
-
-    currentProduct.images.forEach((_, idx) => {
-        const dot = document.createElement('button');
-        dot.className = `carousel-dot ${idx === currentImageIndex ? 'active' : ''}`;
-        dot.onclick = () => {
-            currentImageIndex = idx;
-            updateCarouselImages();
-        };
-        indicators.appendChild(dot);
-    });
-}
-
-function changeImage(dir) {
-    if (!currentProduct) return;
-
-    currentImageIndex += dir;
-
-    if (currentImageIndex < 0) {
-        currentImageIndex = currentProduct.images.length - 1;
-    }
-    if (currentImageIndex >= currentProduct.images.length) {
-        currentImageIndex = 0;
-    }
-
-    updateCarouselImages();
-}
-
-function adjustModalQty(change) {
-    const input = document.getElementById('modal-qty');
-    let qty = parseInt(input.value) + change;
-
-    if (qty < 1) qty = 1;
-    if (qty > currentProduct.qtyAvailable) qty = currentProduct.qtyAvailable;
-
-    input.value = qty;
+function adjustModalQty(v) {
+    const i = document.getElementById('modal-qty');
+    let q = parseInt(i.value) + v;
+    if (q < 1) q = 1;
+    if (q > currentProduct.qtyAvailable) q = currentProduct.qtyAvailable;
+    i.value = q;
 }
 
 function addToCartFromModal() {
     const qty = parseInt(document.getElementById('modal-qty').value);
-
-    cart.push({
-        id: currentProduct.id,
-        name: currentProduct.name,
-        price: currentProduct.price,
-        qty,
-        image: currentProduct.images[0]
-    });
-
+    cart.push({ id: currentProduct.id, name: currentProduct.name, price: currentProduct.price, qty, image: currentProduct.images[0] });
     updateCartCount();
     renderCartItems();
-
     bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
-    showToast(`${qty} × ${currentProduct.name} added`);
 }
 
-/* ================= Cart ================= */
-
+/* ================= Cart UI ================= */
 function updateCartCount() {
-    const count = cart.length;
     const el = document.getElementById('cart-count');
+    el.innerText = cart.length;
+    el.style.display = cart.length ? 'inline-block' : 'none';
+}
 
-    if (count > 0) {
-        el.style.display = 'inline-block';
-        el.innerText = count;
-    } else {
-        el.style.display = 'none';
-    }
+function calculateCartTotals() {
+    let subtotal = 0;
+    cart.forEach(i => subtotal += i.price * i.qty);
+
+    const d = calculateDiscount(subtotal);
+    const total = subtotal - d.amount;
+
+    document.getElementById('cart-subtotal').innerText = fmtINR(subtotal);
+    document.getElementById('cart-discount').innerText = '- ' + fmtINR(d.amount);
+    document.getElementById('cart-total').innerText = fmtINR(total);
 }
 
 function renderCartItems() {
-    const container = document.getElementById('cart-items');
-    container.innerHTML = '';
+    const c = document.getElementById('cart-items');
+    c.innerHTML = '';
 
-    if (cart.length === 0) {
-        container.innerHTML = `
-            <div class="text-center py-5">
-                <i class="fas fa-shopping-bag fa-3x text-muted mb-3"></i>
-                <p class="text-muted">Your cart is empty.</p>
-            </div>
-        `;
+    if (!cart.length) {
+        c.innerHTML = `<p class="text-center text-muted">Your cart is empty</p>`;
+        document.getElementById('cart-summary').style.display = 'none';
+        document.getElementById('checkout-form').style.display = 'none';
         return;
     }
 
-    cart.forEach((item, idx) => {
-        container.innerHTML += `
+    document.getElementById('cart-summary').style.display = 'block';
+    document.getElementById('checkout-form').style.display = 'block';
+
+    cart.forEach((i, idx) => {
+        c.innerHTML += `
             <div class="cart-item">
-                <img src="${item.image}" class="cart-item-img">
-                <div class="cart-item-details">
-                    <div>${item.name}</div>
-                    <small>Qty: ${item.qty}</small>
-                </div>
-                <div>
-                    ${fmtINR(item.price * item.qty)}
-                    <button class="btn btn-link text-danger p-0 ms-2"
-                        onclick="cart.splice(${idx},1); renderCartItems(); updateCartCount();">
-                        Remove
-                    </button>
+                <img src="${i.image}" class="cart-item-img">
+                <div>${i.name}<br><small>Qty: ${i.qty}</small></div>
+                <div>${fmtINR(i.price * i.qty)}
+                    <button onclick="cart.splice(${idx},1);renderCartItems();updateCartCount()">✕</button>
                 </div>
             </div>
         `;
     });
+
+    calculateCartTotals();
 }
 
-/* ================= Toast ================= */
+/* ================= WhatsApp Order ================= */
+function placeOrder() {
+    const name = document.getElementById('cust-name').value.trim();
+    const phone = document.getElementById('cust-phone').value.trim();
+    const address = document.getElementById('cust-address').value.trim();
+    const pin = document.getElementById('cust-pincode').value.trim();
 
-function showToast(msg) {
-    const toast = document.createElement('div');
-    toast.className = 'toast-notification';
-    toast.innerHTML = `<i class="fas fa-check-circle me-2"></i>${msg}`;
+    if (!name || !phone || !address || !pin) {
+        alert('Fill all customer details');
+        return;
+    }
 
-    document.body.appendChild(toast);
+    let msg = `*New Order*%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0APincode: ${pin}%0A%0A`;
+    let subtotal = 0;
 
-    setTimeout(() => {
-        toast.remove();
-    }, 2500);
+    cart.forEach(i => {
+        subtotal += i.price * i.qty;
+        msg += `${i.name} × ${i.qty} = ₹${i.price * i.qty}%0A`;
+    });
+
+    const d = calculateDiscount(subtotal);
+    msg += `%0ASubtotal: ₹${subtotal}%0ADiscount: ₹${d.amount}%0A*Total: ₹${subtotal - d.amount}*`;
+
+    window.open(`https://wa.me/${sellerNumber}?text=${msg}`, '_blank');
 }
 
 /* ================= Init ================= */
-
-renderCombos();
 renderProducts();
-renderRingsCarousel();
 renderCartItems();
 updateCartCount();
-
-
 
 
 
