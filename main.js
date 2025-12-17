@@ -562,10 +562,10 @@ const products = [
     },
     {
         id: 208,
-        name: 'Pearl Elegant Rose Gold Earrings',
-        price: 269,
-        images: ['assets/images/Pearlelegantrosegoldearrings.JPG', 'assets/images/Pearlelegantrosegoldearrings1.JPG'],
-        inStock: false,
+        name: 'Golden hoop earrings',
+        price: 119,
+        images: ['assets/images/goldenhoop.jpg'],
+        inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Beautiful pearl studs in rose gold. Classic elegance.'
@@ -582,14 +582,24 @@ const products = [
     },
     {
         id: 210,
-        name: 'Vema Silver Earrings',
-        price: 254,
-        images: ['assets/images/Vemasilverearrings.JPG'],
-        inStock: false,
-        qtyAvailable: 0,
+        name: 'Blossom drop earrings ',
+        price: 109,
+        images: ['assets/images/blossomdropearrings.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Elegant Vema design in silver. Versatile and beautiful.'
-    }
+    },
+    {
+        id: 211,
+        name: 'Triangle Huggie Earrings ',
+        price: 129,
+        images: ['assets/images/trianglehuggieearring.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Elegant Vema design in silver. Versatile and beautiful.'
+    },
 ];
 
 let cart = [];
@@ -966,6 +976,7 @@ renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
+
 
 
 
