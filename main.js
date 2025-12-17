@@ -674,3 +674,215 @@ function renderRingsCarousel() {
         card.onclick = () => openProductDetail(ring.id);
         card.innerHTML = `
             <img src="${ring.images[0]}" alt="${ring.name}
+        ">
+            <div class="ring-card-overlay">
+                <div class="ring-card-name">${ring.name}</div>
+                <div class="ring-card-price">${fmtINR(ring.price)}</div>
+            </div>
+        `;
+        carousel.appendChild(card);
+    });
+
+    initRingsCarousel();
+}
+
+function initRingsCarousel() {
+    const slider = document.getElementById('rings-carousel');
+    if (!slider) return;
+
+    const cards = [...slider.querySelectorAll('.ring-card')];
+    const cardWidth = 230;
+    const curveStrength = 30;
+
+    function update() {
+        const center = slider.scrollLeft + slider.clientWidth / 2;
+
+        cards.forEach((card, i) => {
+            const cardCenter = i * cardWidth + cardWidth / 2;
+            const dx = cardCenter - center;
+            const angle = dx / 10;
+            const depth = -Math.abs(dx) / curveStrength;
+
+            card.style.transform = `rotateY(${angle}deg) translateZ(${depth}px)`;
+        });
+    }
+
+    update();
+    slider.addEventListener('scroll', update);
+    window.addEventListener('resize', update);
+}
+
+/* ================= Product Modal ================= */
+
+let currentProduct = null;
+let currentImageIndex = 0;
+
+function openProductDetail(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    currentProduct = product;
+    currentImageIndex = 0;
+
+    document.getElementById('productModalTitle').innerText = product.name;
+    document.getElementById('detail-name').innerText = product.name;
+    document.getElementById('detail-price').innerText = fmtINR(product.price);
+    document.getElementById('detail-description').innerText = product.description;
+
+    const actionsDiv = document.getElementById('detail-actions');
+
+    if (product.inStock) {
+        actionsDiv.innerHTML = `
+            <div class="d-flex align-items-center gap-2 mb-3 justify-content-center">
+                <button class="btn-qty-classic" onclick="adjustModalQty(-1)">−</button>
+                <input type="number" id="modal-qty" value="1" min="1" max="${product.qtyAvailable}"
+                    class="form-control form-control-sm text-center"
+                    style="width:60px;font-weight:700" readonly>
+                <button class="btn-qty-classic" onclick="adjustModalQty(1)">+</button>
+            </div>
+            <button class="btn btn-accent w-100" onclick="addToCartFromModal()">
+                <i class="fa fa-shopping-bag"></i> Add to Cart
+            </button>
+        `;
+    } else {
+        actionsDiv.innerHTML = `<button class="btn btn-secondary w-100" disabled>Sold Out</button>`;
+    }
+
+    updateCarouselImages();
+
+    new bootstrap.Modal(document.getElementById('productModal')).show();
+}
+
+function updateCarouselImages() {
+    if (!currentProduct) return;
+
+    document.getElementById('carousel-main-image').src =
+        currentProduct.images[currentImageIndex];
+
+    const indicators = document.getElementById('carousel-indicators');
+    indicators.innerHTML = '';
+
+    currentProduct.images.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `carousel-dot ${idx === currentImageIndex ? 'active' : ''}`;
+        dot.onclick = () => {
+            currentImageIndex = idx;
+            updateCarouselImages();
+        };
+        indicators.appendChild(dot);
+    });
+}
+
+function changeImage(dir) {
+    if (!currentProduct) return;
+
+    currentImageIndex += dir;
+
+    if (currentImageIndex < 0) {
+        currentImageIndex = currentProduct.images.length - 1;
+    }
+    if (currentImageIndex >= currentProduct.images.length) {
+        currentImageIndex = 0;
+    }
+
+    updateCarouselImages();
+}
+
+function adjustModalQty(change) {
+    const input = document.getElementById('modal-qty');
+    let qty = parseInt(input.value) + change;
+
+    if (qty < 1) qty = 1;
+    if (qty > currentProduct.qtyAvailable) qty = currentProduct.qtyAvailable;
+
+    input.value = qty;
+}
+
+function addToCartFromModal() {
+    const qty = parseInt(document.getElementById('modal-qty').value);
+
+    cart.push({
+        id: currentProduct.id,
+        name: currentProduct.name,
+        price: currentProduct.price,
+        qty,
+        image: currentProduct.images[0]
+    });
+
+    updateCartCount();
+    renderCartItems();
+
+    bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
+    showToast(`${qty} × ${currentProduct.name} added`);
+}
+
+/* ================= Cart ================= */
+
+function updateCartCount() {
+    const count = cart.length;
+    const el = document.getElementById('cart-count');
+
+    if (count > 0) {
+        el.style.display = 'inline-block';
+        el.innerText = count;
+    } else {
+        el.style.display = 'none';
+    }
+}
+
+function renderCartItems() {
+    const container = document.getElementById('cart-items');
+    container.innerHTML = '';
+
+    if (cart.length === 0) {
+        container.innerHTML = `
+            <div class="text-center py-5">
+                <i class="fas fa-shopping-bag fa-3x text-muted mb-3"></i>
+                <p class="text-muted">Your cart is empty.</p>
+            </div>
+        `;
+        return;
+    }
+
+    cart.forEach((item, idx) => {
+        container.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div>${item.name}</div>
+                    <small>Qty: ${item.qty}</small>
+                </div>
+                <div>
+                    ${fmtINR(item.price * item.qty)}
+                    <button class="btn btn-link text-danger p-0 ms-2"
+                        onclick="cart.splice(${idx},1); renderCartItems(); updateCartCount();">
+                        Remove
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+}
+
+/* ================= Toast ================= */
+
+function showToast(msg) {
+    const toast = document.createElement('div');
+    toast.className = 'toast-notification';
+    toast.innerHTML = `<i class="fas fa-check-circle me-2"></i>${msg}`;
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 2500);
+}
+
+/* ================= Init ================= */
+
+renderCombos();
+renderProducts();
+renderRingsCarousel();
+renderCartItems();
+updateCartCount();
+
