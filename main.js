@@ -100,7 +100,7 @@ function toggleSidebar() {
 
   function calculateDiscount(subtotal) {
     if (subtotal >= 499) {
-      return { rate: 0.15, amount: Math.round(subtotal * 0.15) };
+      return { rate: 0.10, amount: Math.round(subtotal * 0.10) };
     } else if (subtotal >= 299) {
       return { rate: 0.10, amount: Math.round(subtotal * 0.10) };
     }
@@ -702,6 +702,7 @@ function toggleSidebar() {
       titleIndex = (titleIndex + 1) % heroTitles.length;
       document.getElementById('hero-title').innerText = heroTitles[titleIndex];
     }, 2500);
+
 
 
 
