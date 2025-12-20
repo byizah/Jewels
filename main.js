@@ -17,7 +17,7 @@ const products = [
         id: 101,
         name: 'Eternal Circle Ring',
         price: 99,
-        images: ['assets/images/circle.PNG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+1', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -27,7 +27,7 @@ const products = [
         id: 102,
         name: 'GoldQuad Ring',
         price: 99,
-        images: ['assets/images/square.PNG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+2', 'https://via.placeholder.com/300x300?text=Ring+2+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -37,7 +37,7 @@ const products = [
         id: 103,
         name: 'TriAura Ring',
         price: 99,
-        images: ['assets/images/triangle.PNG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+3', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
         inStock: true,
         qtyAvailable: 3,
         category: 'rings',
@@ -47,7 +47,7 @@ const products = [
         id: 104,
         name: 'Floria Ring',
         price: 99,
-        images: ['assets/images/flower.JPG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+4', 'https://via.placeholder.com/300x300?text=Ring+4+Alt'],
         inStock: true,
         qtyAvailable: 4,
         category: 'rings',
@@ -57,7 +57,7 @@ const products = [
         id: 105,
         name: 'Starlet Glow Ring',
         price: 99,
-        images: ['assets/images/star.PNG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+5', 'https://via.placeholder.com/300x300?text=Ring+5+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -67,7 +67,7 @@ const products = [
         id: 106,
         name: 'Divine Heart Ring',
         price: 99,
-        images: ['assets/images/love.PNG', 'assets/images/allrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Ring+6', 'https://via.placeholder.com/300x300?text=Ring+6+Alt'],
         inStock: false,
         qtyAvailable: 0,
         category: 'rings',
@@ -79,7 +79,7 @@ const products = [
         id: 1,
         name: 'Hexagon bracelet',
         price: 379,
-        images: ['assets/images/hexagonbracelet.jpg', 'assets/images/hexagonbracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+1', 'https://via.placeholder.com/300x300?text=Bracelet+1+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -89,7 +89,7 @@ const products = [
         id: 2,
         name: 'Halo Heart Double Layer Bracelet',
         price: 249,
-        images: ['assets/images/Haloheartdoublelayerbracelet.JPG', 'assets/images/allbracelets.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+2', 'https://via.placeholder.com/300x300?text=Bracelet+2+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -99,7 +99,7 @@ const products = [
         id: 3,
         name: 'Trinity multi bracelet',
         price: 399,
-        images: ['assets/images/trinitymultibracelet.jpg', 'assets/images/trinitymultibracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+3', 'https://via.placeholder.com/300x300?text=Bracelet+3+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -109,7 +109,7 @@ const products = [
         id: 4,
         name: 'Elegant Star Bracelet',
         price: 249,
-        images: ['assets/images/Elegantstarbracelet.JPG', 'assets/images/allbracelets.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+4', 'https://via.placeholder.com/300x300?text=Bracelet+4+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'bracelets',
@@ -119,7 +119,7 @@ const products = [
         id: 5,
         name: 'Roman race bracelet',
         price: 249,
-        images: ['assets/images/Stardoublelayeredgolfbracelet.JPG', 'assets/images/allbracelets.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+5', 'https://via.placeholder.com/300x300?text=Bracelet+5+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -129,7 +129,7 @@ const products = [
         id: 6,
         name: 'Gold Double Layer Bracelet',
         price: 249,
-        images: ['assets/images/Golddoublelayerbracelet.JPG', 'assets/images/allbracelets.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+6', 'https://via.placeholder.com/300x300?text=Bracelet+6+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -139,7 +139,7 @@ const products = [
         id: 7,
         name: 'Rose gold roman bracelets ',
         price: 269,
-        images: ['assets/images/rosegoldromanbracelet.jpg', 'assets/images/rosegoldromanbracelets1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+7', 'https://via.placeholder.com/300x300?text=Bracelet+7+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -149,7 +149,7 @@ const products = [
         id: 8,
         name: 'Gold ivory bracelet',
         price: 349,
-        images: ['assets/images/goldivorybracelet.jpg', 'assets/images/goldivorybracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+8', 'https://via.placeholder.com/300x300?text=Bracelet+8+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -159,7 +159,7 @@ const products = [
         id: 9,
         name: 'Lyra rose gold bracelet',
         price: 299,
-        images: ['assets/images/lyrarosegoldbracelet.jpg', 'assets/images/lyrarosegoldbracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+9', 'https://via.placeholder.com/300x300?text=Bracelet+9+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -169,7 +169,7 @@ const products = [
         id: 10,
         name: 'Seren rose gold bracelet',
         price: 299,
-        images: ['assets/images/serenrosegoldbracelet.jpg', 'assets/images/serenrosegoldbracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+10', 'https://via.placeholder.com/300x300?text=Bracelet+10+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -179,7 +179,7 @@ const products = [
         id: 11,
         name: 'Maze line rose gold bracelet',
         price: 269,
-        images: ['assets/images/mazelinerosegoldbracelet.jpg', 'assets/images/mazelinerosegoldbracelet1.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+11', 'https://via.placeholder.com/300x300?text=Bracelet+11+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -188,8 +188,8 @@ const products = [
     {
         id: 12,
         name: 'Gold stone bracelet',
-        price: 179,
-        images: ['assets/images/goldstonebracelet.jpg', 'assets/images/goldstonebracelet1.jpg'],
+        price: 129,
+        images: ['https://via.placeholder.com/300x300?text=Halo+Heart+Bracelet', 'https://via.placeholder.com/300x300?text=Halo+Heart+Bracelet+2', 'https://via.placeholder.com/300x300?text=Halo+Heart+Bracelet+3'],
         inStock: true,
         qtyAvailable: 2,
         category: 'bracelets',
@@ -199,7 +199,7 @@ const products = [
         id: 13,
         name: 'Midnight clover bracelet',
         price: 249,
-        images: ['assets/images/midnightcloverbracelet.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+13'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -209,20 +209,20 @@ const products = [
         id: 14,
         name: 'Golden curve bracelet',
         price: 229,
-        images: ['assets/images/goldencurvebracelet.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Bracelet+14'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
     },
-   
+
 
     // Necklaces
     {
         id: 301,
         name: 'Gold Heart Necklace',
         price: 249,
-        images: ['assets/images/Goldheartnecklace.JPG', 'assets/images/Goldheartnecklace1.JPG', 'assets/images/Goldheartnecklace2.png'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+1', 'https://via.placeholder.com/300x300?text=Necklace+1+Alt', 'https://via.placeholder.com/300x300?text=Necklace+1+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -231,8 +231,8 @@ const products = [
     {
         id: 302,
         name: 'Mint grace pendant necklace',
-        price: 199,
-        images: ['assets/images/Mintgracependantnecklace20.jpg', 'assets/images/Mintgracependantnecklace1.JPG', 'assets/images/Mintgracependantnecklace2.JPG'],
+        price: 99,
+        images: ['https://via.placeholder.com/300x300?text=Gold+Heart+Necklace', 'https://via.placeholder.com/300x300?text=Gold+Heart+Necklace+2', 'https://via.placeholder.com/300x300?text=Gold+Heart+Necklace+3'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -242,7 +242,7 @@ const products = [
         id: 303,
         name: 'Black Aura Necklace',
         price: 199,
-        images: ['assets/images/BlackAuranecklace1.JPG', 'assets/images/BlackAuranecklace.JPG', 'assets/images/BlackAuranecklace2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+3', 'https://via.placeholder.com/300x300?text=Necklace+3+Alt', 'https://via.placeholder.com/300x300?text=Necklace+3+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -252,7 +252,7 @@ const products = [
         id: 304,
         name: 'Royal White Charm Necklace',
         price: 349,
-        images: ['assets/images/RoyalWhiteCharmnecklace.jpg', 'assets/images/RoyalWhiteCharmnecklace1.JPG', 'assets/images/RoyalWhiteCharmnecklace2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+4', 'https://via.placeholder.com/300x300?text=Necklace+4+Alt', 'https://via.placeholder.com/300x300?text=Necklace+4+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -262,7 +262,7 @@ const products = [
         id: 305,
         name: 'Rose Gold Layered Necklace',
         price: 299,
-        images: ['assets/images/Rosegoldlayerednecklace.JPG', 'assets/images/Rosegoldlayerednecklace1.png'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+5', 'https://via.placeholder.com/300x300?text=Necklace+5+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -271,8 +271,8 @@ const products = [
     {
         id: 306,
         name: 'Blue Aura Necklace',
-        price: 189,
-        images: ['assets/images/BlueAuranecklace.jpg', 'assets/images/BlueAuranecklace1.jpg', 'assets/images/BlueAuranecklace2.jpg'],
+        price: 89,
+        images: ['https://via.placeholder.com/300x300?text=Clover+Necklace', 'https://via.placeholder.com/300x300?text=Clover+Necklace+2', 'https://via.placeholder.com/300x300?text=Clover+Necklace+3'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -282,7 +282,7 @@ const products = [
         id: 307,
         name: 'Double Layered Snake Chain Necklace',
         price: 252,
-        images: ['assets/images/Doublelayeredsnakechainnecklace.JPG', 'assets/images/Doublelayeredsnakechainnecklace1.png'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+7', 'https://via.placeholder.com/300x300?text=Necklace+7+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'necklaces',
@@ -292,7 +292,7 @@ const products = [
         id: 308,
         name: 'Royal green charm Necklace',
         price: 349,
-        images: ['assets/images/RoyalGreenCharmnecklace.jpg', 'assets/images/RoyalGreenCharmnecklace1.JPG', 'assets/images/RoyalGreenCharmnecklace2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+8', 'https://via.placeholder.com/300x300?text=Necklace+8+Alt', 'https://via.placeholder.com/300x300?text=Necklace+8+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -302,7 +302,7 @@ const products = [
         id: 309,
         name: 'Clover Double Chain Necklace',
         price: 322,
-        images: ['assets/images/Cloverdoublechainnecklace.JPG', 'assets/images/Cloverdoublechainnecklace1.png'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+9', 'https://via.placeholder.com/300x300?text=Necklace+9+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -312,7 +312,7 @@ const products = [
         id: 310,
         name: 'Rainbow gem Necklace',
         price: 369,
-        images: ['assets/images/RainbowDropnecklace.jpg', 'assets/images/RainbowDropnecklace1.jpg', 'assets/images/RainbowDropnecklace2.jpg'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+10', 'https://via.placeholder.com/300x300?text=Necklace+10+Alt', 'https://via.placeholder.com/300x300?text=Necklace+10+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -322,7 +322,7 @@ const products = [
         id: 311,
         name: 'Ivory Tear Drop Necklace',
         price: 199,
-        images: ['assets/images/IvoryTearDropnecklace.jpg', 'assets/images/IvoryTearDropnecklac1.jpg', 'assets/images/IvoryTearDropnecklace2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+11', 'https://via.placeholder.com/300x300?text=Necklace+11+Alt', 'https://via.placeholder.com/300x300?text=Necklace+11+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -332,7 +332,7 @@ const products = [
         id: 312,
         name: 'Luna Gold Necklace',
         price: 229,
-        images: ['assets/images/Lunagoldnecklace.JPG', 'assets/images/Lunagoldnecklace1.JPG', 'assets/images/Lunagoldnecklace2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+12', 'https://via.placeholder.com/300x300?text=Necklace+12+Alt', 'https://via.placeholder.com/300x300?text=Necklace+12+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -342,7 +342,7 @@ const products = [
         id: 313,
         name: 'Hidden Love Necklace',
         price: 229,
-        images: ['assets/images/hiddenlovependant.JPG', 'assets/images/hiddenlovependant1.JPG', 'assets/images/hiddenlovependant2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+13', 'https://via.placeholder.com/300x300?text=Necklace+13+Alt', 'https://via.placeholder.com/300x300?text=Necklace+13+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -352,7 +352,7 @@ const products = [
         id: 314,
         name: 'Golden rose Necklace',
         price: 229,
-        images: ['assets/images/goldenrose.JPG', 'assets/images/goldenrose1.JPG', 'assets/images/goldenrose2.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+14', 'https://via.placeholder.com/300x300?text=Necklace+14+Alt', 'https://via.placeholder.com/300x300?text=Necklace+14+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -362,7 +362,7 @@ const products = [
         id: 315,
         name: 'Ivory square necklace',
         price: 229,
-        images: ['assets/images/ivorysquarenecklace.jpg', 'assets/images/ivorysquarenecklace1.jpg', 'assets/images/ivory sqr .JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+15', 'https://via.placeholder.com/300x300?text=Necklace+15+Alt', 'https://via.placeholder.com/300x300?text=Necklace+15+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -372,7 +372,7 @@ const products = [
         id: 316,
         name: '11:11 love necklace',
         price: 199,
-        images: ['assets/images/1111lovenecklace.jpg', 'assets/images/1111lovenecklace1.jpg', 'assets/images/11 neck 3.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+16', 'https://via.placeholder.com/300x300?text=Necklace+16+Alt', 'https://via.placeholder.com/300x300?text=Necklace+16+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -382,7 +382,7 @@ const products = [
         id: 317,
         name: 'Lavender oval pendant',
         price: 199,
-        images: ['assets/images/lavenderovalpendant.jpg', 'assets/images/lavenderovalpendant1.jpg', 'assets/images/lavender oval necklace.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+17', 'https://via.placeholder.com/300x300?text=Necklace+17+Alt', 'https://via.placeholder.com/300x300?text=Necklace+17+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -392,7 +392,7 @@ const products = [
         id: 318,
         name: 'Flora dream necklace',
         price: 199,
-        images: ['assets/images/floradreamnecklace.jpg', 'assets/images/floradreamnecklace1.jpg', 'assets/images/flora dream necklace.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+18', 'https://via.placeholder.com/300x300?text=Necklace+18+Alt', 'https://via.placeholder.com/300x300?text=Necklace+18+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -402,7 +402,7 @@ const products = [
         id: 319,
         name: 'Olive recta necklace',
         price: 199,
-        images: ['assets/images/oliverectapendant.jpg', 'assets/images/oliverectapendant1.jpg', 'assets/images/olive recta.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+19', 'https://via.placeholder.com/300x300?text=Necklace+19+Alt', 'https://via.placeholder.com/300x300?text=Necklace+19+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -412,7 +412,7 @@ const products = [
         id: 320,
         name: 'Blue lotus pendant',
         price: 199,
-        images: ['assets/images/bluelotuspendant.jpg', 'assets/images/bluelotuspendant1.jpg', 'assets/images/bluelotuspendent.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+20', 'https://via.placeholder.com/300x300?text=Necklace+20+Alt', 'https://via.placeholder.com/300x300?text=Necklace+20+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -422,7 +422,7 @@ const products = [
         id: 321,
         name: 'Lumi stone Necklace',
         price: 199,
-        images: ['assets/images/lumistonenecklace.jpg', 'assets/images/lumistonenecklace1.jpg', 'assets/images/lumi stone.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+21', 'https://via.placeholder.com/300x300?text=Necklace+21+Alt', 'https://via.placeholder.com/300x300?text=Necklace+21+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -432,7 +432,7 @@ const products = [
         id: 322,
         name: 'Golden flower Necklace',
         price: 199,
-        images: ['assets/images/goldenflowernecklace.jpg', 'assets/images/goldenflowernecklace1.jpg', 'assets/images/golden flower.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+22', 'https://via.placeholder.com/300x300?text=Necklace+22+Alt', 'https://via.placeholder.com/300x300?text=Necklace+22+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -442,7 +442,7 @@ const products = [
         id: 323,
         name: 'Lavender recta Necklace',
         price: 199,
-        images: ['assets/images/lavenderrectanecklace.jpg', 'assets/images/lavenderrectanecklace1.jpg', 'assets/images/lavender recta.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+23', 'https://via.placeholder.com/300x300?text=Necklace+23+Alt', 'https://via.placeholder.com/300x300?text=Necklace+23+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -452,7 +452,7 @@ const products = [
         id: 324,
         name: 'Ivory blossom pendant',
         price: 199,
-        images: ['assets/images/ivoryblossompendant.jpg', 'assets/images/ivoryblossompendant1.jpg', 'assets/images/ivory blossom.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+24', 'https://via.placeholder.com/300x300?text=Necklace+24+Alt', 'https://via.placeholder.com/300x300?text=Necklace+24+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -462,7 +462,7 @@ const products = [
         id: 325,
         name: 'Crystal frame necklace',
         price: 199,
-        images: ['assets/images/crystalframenecklace.jpg', 'assets/images/crystalframenecklace1.jpg', 'assets/images/crystal frame.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+25', 'https://via.placeholder.com/300x300?text=Necklace+25+Alt', 'https://via.placeholder.com/300x300?text=Necklace+25+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -472,7 +472,7 @@ const products = [
         id: 326,
         name: 'Purple Recta Necklace',
         price: 199,
-        images: ['assets/images/purplerectanecklace.jpg', 'assets/images/purplerectanecklace1.jpg', 'assets/images/purple recta.PNG'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+26', 'https://via.placeholder.com/300x300?text=Necklace+26+Alt', 'https://via.placeholder.com/300x300?text=Necklace+26+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -482,7 +482,7 @@ const products = [
         id: 327,
         name: 'Heart Necklace',
         price: 199,
-        images: ['assets/images/heart pendant 1.jpeg', 'assets/images/heart pendant 2.jpeg', 'assets/images/heart pendant 3.jpeg'],
+        images: ['https://via.placeholder.com/300x300?text=Necklace+27', 'https://via.placeholder.com/300x300?text=Necklace+27+Alt', 'https://via.placeholder.com/300x300?text=Necklace+27+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -494,7 +494,7 @@ const products = [
         id: 201,
         name: 'Rose Gold Sphere Earrings',
         price: 342,
-        images: ['assets/images/Rosegoldsphereearrings.JPG', 'assets/images/Rosegoldsphereearrings1.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+1', 'https://via.placeholder.com/300x300?text=Earring+1+Alt'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -504,7 +504,7 @@ const products = [
         id: 202,
         name: 'Golden Prism Earrings',
         price: 149,
-        images: ['assets/images/Goldenprismearrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+2'],
         inStock: false,
         qtyAvailable: 10,
         category: 'earrings',
@@ -513,8 +513,8 @@ const products = [
     {
         id: 203,
         name: 'Flower Cluster Earrings',
-        price: 159,
-        images: ['assets/images/Flowerclusterearrings.JPG'],
+        price: 79,
+        images: ['https://via.placeholder.com/300x300?text=Flower+Earrings', 'https://via.placeholder.com/300x300?text=Flower+Earrings+2', 'https://via.placeholder.com/300x300?text=Flower+Earrings+3'],
         inStock: false,
         qtyAvailable: 9,
         category: 'earrings',
@@ -524,7 +524,7 @@ const products = [
         id: 204,
         name: 'Gold Huggie Hoop Earrings',
         price: 286,
-        images: ['assets/images/Goldhuggiehoopearrings.JPG', 'assets/images/Goldhuggiehoopearrings1.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+4', 'https://via.placeholder.com/300x300?text=Earring+4+Alt'],
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
@@ -534,7 +534,7 @@ const products = [
         id: 205,
         name: 'Swirl Earrings',
         price: 149,
-        images: ['assets/images/Swirlearrings.JPG', 'assets/images/Swirlearrings1.png'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+5', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
         inStock: false,
         qtyAvailable: 15,
         category: 'earrings',
@@ -544,7 +544,7 @@ const products = [
         id: 206,
         name: 'Rose Gold Huggie Hoop Earrings',
         price: 286,
-        images: ['assets/images/Rosegoldhuggiehoopearrings.JPG', 'assets/images/Rosegoldhuggiehoopearrings1.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+6', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -554,7 +554,7 @@ const products = [
         id: 207,
         name: 'Vema Rose Gold Earrings',
         price: 254,
-        images: ['assets/images/Vemarosegoldearring.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+7'],
         inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
@@ -564,7 +564,7 @@ const products = [
         id: 208,
         name: 'Pearl Elegant Rose Gold Earrings',
         price: 269,
-        images: ['assets/images/Pearlelegantrosegoldearrings.JPG', 'assets/images/Pearlelegantrosegoldearrings1.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+8', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
         inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
@@ -574,7 +574,7 @@ const products = [
         id: 209,
         name: 'Halo Stud Earrings',
         price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+9'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -584,7 +584,7 @@ const products = [
         id: 210,
         name: 'Vema Silver Earrings',
         price: 254,
-        images: ['assets/images/Vemasilverearrings.JPG'],
+        images: ['https://via.placeholder.com/300x300?text=Earring+10'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -814,6 +814,10 @@ function openProductDetail(productId) {
 
     if (product.inStock) {
         actionsDiv.innerHTML = `
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span style="font-weight: 700; font-size: 1.1rem;">Price:</span>
+                <span style="font-size: 1.3rem; font-weight: 700; color: var(--accent);">${fmtINR(product.price)}</span>
+            </div>
             <div class="d-flex align-items-center gap-2 mb-3 justify-content-center">
                 <button class="btn-qty-classic" onclick="adjustModalQty(-1)">−</button>
                 <input type="number" id="modal-qty" value="1" min="1" max="${product.qtyAvailable}"
@@ -911,8 +915,16 @@ function updateCartCount() {
     }
 }
 
+function calculateSubtotal() {
+    return cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+}
+
 function renderCartItems() {
     const container = document.getElementById('cart-items');
+    const subtotal = calculateSubtotal();
+    const shipping = 30; // Flat ₹30 shipping charge
+    const total = subtotal + shipping;
+    
     container.innerHTML = '';
 
     if (cart.length === 0) {
@@ -943,6 +955,11 @@ function renderCartItems() {
             </div>
         `;
     });
+    
+    // Update the order summary
+    document.getElementById('cart-subtotal').textContent = fmtINR(subtotal);
+    document.getElementById('shipping-amount').textContent = fmtINR(shipping);
+    document.getElementById('cart-total').textContent = fmtINR(total);
 }
 
 /* ================= Toast ================= */
@@ -961,10 +978,71 @@ function showToast(msg) {
 
 /* ================= Init ================= */
 
+// Initialize the app
 renderCombos();
 renderProducts();
 renderRingsCarousel();
 renderCartItems();
 updateCartCount();
 
+// Add event listener for WhatsApp checkout
+document.getElementById('checkout-whatsapp').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Get customer details
+    const name = document.getElementById('customer-name').value.trim();
+    const phone = document.getElementById('customer-phone').value.trim();
+    const address = document.getElementById('customer-address').value.trim();
+    const state = document.getElementById('customer-state').value.trim();
+    const country = document.getElementById('customer-country').value.trim();
+    const pincode = document.getElementById('customer-pincode').value.trim();
+    
+    // Validate form
+    if (!name || !phone || !address || !state || !country || !pincode) {
+        showToast('Please fill in all shipping details');
+        return;
+    }
+    
+    if (cart.length === 0) {
+        showToast('Your cart is empty');
+        return;
+    }
+    
+    // Format order details
+    let orderDetails = '📦 *NEW ORDER* \n\n';
+    orderDetails += `👤 *Name:* ${name}\n`;
+    orderDetails += `📱 *Phone:* ${phone}\n`;
+    orderDetails += `📍 *Address:* ${address}, ${state}, ${country} - ${pincode}\n\n`;
+    orderDetails += '🛍️ *Order Items:*\n';
+    
+    cart.forEach((item, index) => {
+        orderDetails += `${index + 1}. ${item.name} (Qty: ${item.qty}) - ${fmtINR(item.price * item.qty)}\n`;
+    });
+    
+    const subtotal = calculateSubtotal();
+    const shipping = 30;
+    const total = subtotal + shipping;
+    
+    orderDetails += '\n';
+    orderDetails += `💰 *Subtotal:* ${fmtINR(subtotal)}\n`;
+    orderDetails += `🚚 *Shipping:* ${fmtINR(shipping)}\n`;
+    orderDetails += `💵 *Total:* ${fmtINR(total)}\n\n`;
+    orderDetails += 'Thank you for your order! We\'ll contact you shortly to confirm the details. 🎉';
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(orderDetails);
+    const whatsappUrl = `https://wa.me/918891093751?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+});
 
+// Clear cart button
+document.getElementById('clear-cart').addEventListener('click', function() {
+    if (cart.length > 0 && confirm('Are you sure you want to clear your cart?')) {
+        cart = [];
+        renderCartItems();
+        updateCartCount();
+        showToast('Cart cleared');
+    }
+});
