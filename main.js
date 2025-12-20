@@ -46,28 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
 const combos = [];
 
 const products = [
-  /* Rings */
-  {
-    id: 101,
-    name: 'Eternal Circle Ring',
-    price: 99,
-    images: ['assets/images/circle.PNG', 'assets/images/allrings.JPG'],
-    inStock: true,
-    qtyAvailable: 2,
-    category: 'rings',
-    description: 'Elegant classic gold ring. Simple and timeless.'
-  },
-  {
-    id: 102,
-    name: 'GoldQuad Ring',
-    price: 99,
-    images: ['assets/images/square.PNG', 'assets/images/allrings.JPG'],
-    inStock: true,
-    qtyAvailable: 2,
-    category: 'rings',
-    description: 'Beautiful rose gold finish ring. Perfect for everyday wear.'
-  }
-  /* NOTE: other products continue exactly as in your file */
+  
+   
+  { id: 101, ... },
+  { id: 102, ... },
+  { id: 103, ... },
+  { id: 104, ... }
+];
+
+ 
 ];
 
 /* ================================
@@ -321,3 +308,4 @@ function showToast(message) {
 document.addEventListener('shown.bs.modal', () => {
   document.body.style.paddingRight = '0px';
 });
+
