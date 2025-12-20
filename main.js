@@ -1050,6 +1050,7 @@ document.getElementById('checkout-whatsapp').addEventListener('click', function(
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
 });
+} // Close the renderCartItems function
 
 // Clear cart button
 document.getElementById('clear-cart').addEventListener('click', function() {
