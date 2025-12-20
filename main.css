@@ -1,4 +1,4 @@
-  /* ROOT VARIABLES */
+/* ROOT VARIABLES */
   :root {
     --bg: #ffffff;
     --primary: #1a1a1a;
@@ -22,7 +22,7 @@
   html, body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
-    background: var(--bg);
+    background: transparent;
     color: var(--primary);
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -30,9 +30,10 @@
   }
 
   body {
-    padding-top: 92px;
-  }
-
+  padding-top: 92px;
+  background: linear-gradient(135deg, #ffffff 0%, #fff0f7 50%, #ffe6f2 100%) !important;
+  min-height: 100vh;
+}
   a {
     color: var(--accent);
     text-decoration: none;
