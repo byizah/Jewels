@@ -923,7 +923,8 @@ function renderCartItems() {
     const container = document.getElementById('cart-items');
     const subtotal = calculateSubtotal();
     const shipping = 30; // Flat ₹30 shipping charge
-    const total = subtotal + shipping;
+    const discount = calculateDiscount(subtotal);
+    const total = subtotal + shipping - discount.amount;
     
     container.innerHTML = '';
 
@@ -934,6 +935,8 @@ function renderCartItems() {
                 <p class="text-muted">Your cart is empty.</p>
             </div>
         `;
+        // Hide discount row when cart is empty
+        document.getElementById('discount-row').style.display = 'none';
         return;
     }
 
@@ -959,8 +962,19 @@ function renderCartItems() {
     // Update the order summary
     document.getElementById('cart-subtotal').textContent = fmtINR(subtotal);
     document.getElementById('shipping-amount').textContent = fmtINR(shipping);
+    
+    // Update discount display
+    const discountRow = document.getElementById('discount-row');
+    const discountElement = document.getElementById('cart-discount');
+    
+    if (discount.amount > 0) {
+        discountRow.style.display = 'flex';
+        discountElement.textContent = `-${fmtINR(discount.amount)}`;
+    } else {
+        discountRow.style.display = 'none';
+    }
+    
     document.getElementById('cart-total').textContent = fmtINR(total);
-}
 
 /* ================= Toast ================= */
 
@@ -1046,5 +1060,3 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
-
-
