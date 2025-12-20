@@ -13,6 +13,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <!-- Main CSS -->
   <link href="main.css" rel="stylesheet">
+  <!-- Carousel CSS -->
+  <link href="carousel.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -99,31 +105,31 @@
       <div class="col-12">
         <div class="hero-carousel">
           <div class="carousel-item-custom active">
-            <img src="assets/images/Goldheartnecklace1.JPG" alt="Gold Heart Necklace Collection">
+            <img src="https://via.placeholder.com/600x400/ffc0cb/1a1a1a?text=Necklace+Collection" alt="Necklace Collection" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Haloheartdoublelayerbracelet.JPG" alt="Halo Heart Bracelet Collection">
+            <img src="https://via.placeholder.com/600x400/ffd6e7/1a1a1a?text=Bracelet+Collection" alt="Bracelet Collection" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Cloverdoublechainnecklace.JPG" alt="Clover Necklace Collection">
+            <img src="https://via.placeholder.com/600x400/ffb6c1/1a1a1a?text=Clover+Necklace" alt="Clover Necklace" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/allbracelets.JPG" alt="Bracelets Collection">
+            <img src="https://via.placeholder.com/600x400/ffc0cb/1a1a1a?text=All+Bracelets" alt="Bracelets Collection" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Flowerclusterearrings.JPG" alt="Flower Earrings Collection">
+            <img src="https://via.placeholder.com/600x400/ffd6e7/1a1a1a?text=Flower+Earrings" alt="Flower Earrings" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Bowsnakenecklace.JPG" alt="Bow Snake Necklace">
+            <img src="https://via.placeholder.com/600x400/ffb6c1/1a1a1a?text=Bow+Necklace" alt="Bow Necklace" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Goldenprismearrings.JPG" alt="Golden Prism Earrings">
+            <img src="https://via.placeholder.com/600x400/ffc0cb/1a1a1a?text=Prism+Earrings" alt="Prism Earrings" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Minimalbutterflynecklace.JPG" alt="Minimal Butterfly Necklace">
+            <img src="https://via.placeholder.com/600x400/ffd6e7/1a1a1a?text=Butterfly+Necklace" alt="Butterfly Necklace" style="width: 100%; height: auto;">
           </div>
           <div class="carousel-item-custom">
-            <img src="assets/images/Halostudearrings.JPG" alt="Halo Stud Earrings">
+            <img src="https://via.placeholder.com/600x400/ffb6c1/1a1a1a?text=Halo+Earrings" alt="Halo Earrings" style="width: 100%; height: auto;">
           </div>
         </div>
       </div>
@@ -322,12 +328,11 @@
     </div>
 
     <div class="text-center mt-3 pt-3 text-muted" style="border-top: 1px solid #ffc0cb; font-size: 0.8rem;">
-      © 2025 IZAH — All rights reserved
+      2025 IZAH — All rights reserved
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 <script>
   // Toggle sidebar function
@@ -339,6 +344,20 @@
       overlay.classList.toggle('active');
     }
   }
+
+  // Initialize the page when DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize carousels and render products
+    if (typeof renderProducts === 'function') {
+      renderProducts();
+    }
+    if (typeof renderRingsCarousel === 'function') {
+      renderRingsCarousel();
+    }
+    if (typeof updateCartCount === 'function') {
+      updateCartCount();
+    }
+  });
 </script>
 
 </body>
