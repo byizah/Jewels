@@ -231,7 +231,7 @@ const products = [
     {
         id: 302,
         name: 'Mint grace pendant necklace',
-        price: 99,
+        price: 199,
         images: ['https://via.placeholder.com/300x300?text=Gold+Heart+Necklace', 'https://via.placeholder.com/300x300?text=Gold+Heart+Necklace+2', 'https://via.placeholder.com/300x300?text=Gold+Heart+Necklace+3'],
         inStock: true,
         qtyAvailable: 1,
@@ -1046,3 +1046,4 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
