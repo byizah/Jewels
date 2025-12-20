@@ -209,7 +209,7 @@ const products = [
         id: 14,
         name: 'Golden curve bracelet',
         price: 229,
-        images: ['https://via.placeholder.com/300x300?text=Bracelet+14'],
+        images: ['assets/images/goldencurvebracelet.jpg'],
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
@@ -1046,3 +1046,4 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
