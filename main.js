@@ -17,7 +17,7 @@ const products = [
         id: 101,
         name: 'Eternal Circle Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+1', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
+        images: ['assets/images/goldencurvebracelet.jpg', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -1046,4 +1046,5 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
