@@ -392,7 +392,7 @@ const products = [
         id: 318,
         name: 'Flora dream necklace',
         price: 199,
-        images: ['assets/images/floradreamnecklace.jpg', '', 'https://via.placeholder.com/300x300?text=Necklace+18+Alt2'],
+        images: ['assets/images/floradreamnecklace.jpg', 'assets/images/floradreamnecklace1.jpg', 'https://via.placeholder.com/300x300?text=Necklace+18+Alt2'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
