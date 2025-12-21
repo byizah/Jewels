@@ -120,7 +120,7 @@ const products = [
         name: 'Roman race bracelet',
         price: 249,
         images: ['assets/images/romanracebracelet.jpg', 'assets/images/romanracebracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Double-layered design with star charm. Versatile and stylish.'
@@ -625,7 +625,7 @@ const products = [
         name: 'Gold Recta Earrings',
         price: 310,
         images: ['assets/images/goldrectaearring.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
@@ -1156,6 +1156,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
