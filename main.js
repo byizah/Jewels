@@ -495,7 +495,7 @@ const products = [
         name: 'Crescent White Earrings',
         price: 342,
         images: ['assets/images/crescentwhiteearrings.jpg', 'assets/images/crescentwhiteearrings.jpg'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
         description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'
@@ -505,7 +505,7 @@ const products = [
         name: 'Gold Rose Studs',
         price: 149,
         images: ['assets/images/goldrosestuds.jpg'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 10,
         category: 'earrings',
         description: 'Geometric prism design in gold. Modern and eye-catching.'
@@ -515,7 +515,7 @@ const products = [
         name: 'Heart Enamel Earrings',
         price: 79,
         images: ['assets/images/heartenamelearrings.jpg', 'https://via.placeholder.com/300x300?text=Flower+Earrings+2', 'https://via.placeholder.com/300x300?text=Flower+Earrings+3'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 9,
         category: 'earrings',
         description: 'Delicate flower cluster studs. Feminine and charming.'
@@ -535,7 +535,7 @@ const products = [
         name: 'Dangle Stud',
         price: 149,
         images: ['assets/images/danglestud.jpg', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 15,
         category: 'earrings',
         description: 'Unique swirl design. Modern and elegant.'
@@ -545,7 +545,7 @@ const products = [
         name: 'Pear Petal Earrings',
         price: 286,
         images: ['assets/images/pearpetalearrings.jpg', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
         description: 'Rose gold huggie hoops. Chic and sophisticated.'
@@ -555,7 +555,7 @@ const products = [
         name: 'Gold Pepper Hoops',
         price: 254,
         images: ['assets/images/goldpepperhoops.jpg'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Elegant Vema design in rose gold. Perfect for any occasion.'
@@ -565,7 +565,7 @@ const products = [
         name: 'Golden Hoops',
         price: 269,
         images: ['assets/images/goldenhoop.jpg', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Beautiful pearl studs in rose gold. Classic elegance.'
@@ -585,7 +585,7 @@ const products = [
         name: 'Blossom Drop Earrings',
         price: 254,
         images: ['assets/images/blossomdropearrings.jpg'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
         description: 'Elegant Vema design in silver. Versatile and beautiful.'
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
