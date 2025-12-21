@@ -591,7 +591,7 @@ const products = [
         description: 'Elegant Vema design in silver. Versatile and beautiful.'
     },
     {
-        id: 209,
+        id: 211,
         name: 'Triangle Huggie Earrings',
         price: 310,
         images: ['assets/images/trianglehuggieearring.jpg'],
@@ -601,7 +601,7 @@ const products = [
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 209,
+        id: 212,
         name: 'Rose Red Drops',
         price: 310,
         images: ['assets/images/rosereddrops.jpg'],
@@ -611,7 +611,7 @@ const products = [
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 209,
+        id: 213,
         name: 'Locket Love Earrings',
         price: 310,
         images: ['assets/images/locketloveearring.jpg'],
@@ -621,7 +621,7 @@ const products = [
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 209,
+        id: 214,
         name: 'Gold Recta Earrings',
         price: 310,
         images: ['assets/images/goldrectaearring.jpg'],
@@ -1086,6 +1086,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
