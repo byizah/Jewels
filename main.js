@@ -402,7 +402,7 @@ const products = [
         id: 319,
         name: 'Olive recta necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+19', 'https://via.placeholder.com/300x300?text=Necklace+19+Alt', 'https://via.placeholder.com/300x300?text=Necklace+19+Alt2'],
+        images: ['assets/images/oliverectapendant.jpg', 'assets/images/oliverectapendant.jpg', 'assets/images/olive recta.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -412,7 +412,7 @@ const products = [
         id: 320,
         name: 'Blue lotus pendant',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+20', 'https://via.placeholder.com/300x300?text=Necklace+20+Alt', 'https://via.placeholder.com/300x300?text=Necklace+20+Alt2'],
+        images: ['assets/images/bluelotuspendant.jpg', 'assets/images/bluelotuspendant1.jpg', 'assets/images/bluelotuspendent.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -422,7 +422,7 @@ const products = [
         id: 321,
         name: 'Lumi stone Necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+21', 'https://via.placeholder.com/300x300?text=Necklace+21+Alt', 'https://via.placeholder.com/300x300?text=Necklace+21+Alt2'],
+        images: ['assets/images/lumistonenecklace.jpg', 'assets/images/lumistonenecklace1.jpg', 'assets/images/lumi stone.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -432,7 +432,7 @@ const products = [
         id: 322,
         name: 'Golden flower Necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+22', 'https://via.placeholder.com/300x300?text=Necklace+22+Alt', 'https://via.placeholder.com/300x300?text=Necklace+22+Alt2'],
+        images: ['assets/images/goldenflowernecklace.jpg', 'assets/images/goldenflowernecklace1.jpg', 'assets/images/golden flower.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -442,7 +442,7 @@ const products = [
         id: 323,
         name: 'Lavender recta Necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+23', 'https://via.placeholder.com/300x300?text=Necklace+23+Alt', 'https://via.placeholder.com/300x300?text=Necklace+23+Alt2'],
+        images: ['assets/images/lavenderrectanecklace.jpg', 'assets/images/lavenderrectanecklace1.jpg', 'assets/images/lavender recta.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -452,7 +452,7 @@ const products = [
         id: 324,
         name: 'Ivory blossom pendant',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+24', 'https://via.placeholder.com/300x300?text=Necklace+24+Alt', 'https://via.placeholder.com/300x300?text=Necklace+24+Alt2'],
+        images: ['assets/images/ivoryblossompendant.jpg', 'assets/images/ivoryblossompendant1.jpg', 'assets/images/ivory blossom.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -462,7 +462,7 @@ const products = [
         id: 325,
         name: 'Crystal frame necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+25', 'https://via.placeholder.com/300x300?text=Necklace+25+Alt', 'https://via.placeholder.com/300x300?text=Necklace+25+Alt2'],
+        images: ['assets/images/crystalframenecklace.jpg', 'assets/images/crystalframenecklace1.jpg', 'assets/images/crystal frame.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -472,7 +472,7 @@ const products = [
         id: 326,
         name: 'Purple Recta Necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+26', 'https://via.placeholder.com/300x300?text=Necklace+26+Alt', 'https://via.placeholder.com/300x300?text=Necklace+26+Alt2'],
+        images: ['assets/images/purplerectanecklace.jpg', 'assets/images/purplerectanecklace1.jpg', 'assets/images/purple recta.PNG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -482,7 +482,7 @@ const products = [
         id: 327,
         name: 'Heart Necklace',
         price: 199,
-        images: ['https://via.placeholder.com/300x300?text=Necklace+27', 'https://via.placeholder.com/300x300?text=Necklace+27+Alt', 'https://via.placeholder.com/300x300?text=Necklace+27+Alt2'],
+        images: ['assets/images/heartpendant.jpg', 'assets/images/heartpendant1.jpg', 'assets/images/heart pendant 3.jpeg'],
         inStock: true,
         qtyAvailable: 1,
         category: 'necklaces',
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
