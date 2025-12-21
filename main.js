@@ -253,7 +253,7 @@ const products = [
         name: 'Royal White Charm Necklace',
         price: 349,
         images: ['assets/images/RoyalWhiteCharmnecklace.jpg', 'assets/images/RoyalWhiteCharmnecklace1.JPG', 'assets/images/RoyalWhiteCharmnecklace2.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with dangling clear baguette-cut and small round cubic zirconia stones.'
@@ -271,9 +271,9 @@ const products = [
     {
         id: 306,
         name: 'Blue Aura Necklace',
-        price: 89,
+        price: 189,
         images: ['assets/images/BlueAuranecklace.jpg', 'assets/images/BlueAuranecklace1.jpg', 'assets/images/BlueAuranecklace2.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A delicate silver-tone necklace featuring a shimmering blue gemstone, designed to add a touch of elegant simplicity to any look.'
@@ -293,7 +293,7 @@ const products = [
         name: 'Royal green charm Necklace',
         price: 349,
         images: ['assets/images/RoyalGreenCharmnecklace.jpg', 'assets/images/RoyalGreenCharmnecklace1.JPG', 'assets/images/RoyalGreenCharmnecklace2.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with dangling green baguette-cut gemstones and small round green stones.'
@@ -403,7 +403,7 @@ const products = [
         name: 'Olive recta necklace',
         price: 199,
         images: ['assets/images/oliverectapendant.jpg', 'assets/images/oliverectapendant.jpg', 'assets/images/olive recta.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone necklace with a dark square-cut gemstone pendant.'
@@ -443,7 +443,7 @@ const products = [
         name: 'Lavender recta Necklace',
         price: 199,
         images: ['assets/images/lavenderrectanecklace.jpg', 'assets/images/lavenderrectanecklace1.jpg', 'assets/images/lavender recta.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone necklace with a square-cut crystal pendant.'
@@ -483,7 +483,7 @@ const products = [
         name: 'Heart Necklace',
         price: 199,
         images: ['assets/images/heartpendant.jpg', 'assets/images/heartpendant1.jpg', 'assets/images/heart pendant 3.jpeg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone heart pendant necklace with a sleek, minimal finish.'
@@ -585,7 +585,7 @@ const products = [
         name: 'Blossom Drop Earrings',
         price: 109,
         images: ['assets/images/blossomdropearrings.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
         description: 'Elegant Vema design in silver. Versatile and beautiful.'
@@ -1156,6 +1156,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
