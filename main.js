@@ -17,7 +17,7 @@ const products = [
         id: 101,
         name: 'Eternal Circle Ring',
         price: 99,
-        images: ['assets/images/goldencurvebracelet.jpg', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
+        images: ['assets/images/circle.PNG', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -27,7 +27,7 @@ const products = [
         id: 102,
         name: 'GoldQuad Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+2', 'https://via.placeholder.com/300x300?text=Ring+2+Alt'],
+        images: ['assets/images/square.PNG', 'https://via.placeholder.com/300x300?text=Ring+2+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -37,7 +37,7 @@ const products = [
         id: 103,
         name: 'TriAura Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+3', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
+        images: ['assets/images/triangle.PNG', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
         inStock: true,
         qtyAvailable: 3,
         category: 'rings',
@@ -47,7 +47,7 @@ const products = [
         id: 104,
         name: 'Floria Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+4', 'https://via.placeholder.com/300x300?text=Ring+4+Alt'],
+        images: ['assets/images/flower.JPG', 'https://via.placeholder.com/300x300?text=Ring+4+Alt'],
         inStock: true,
         qtyAvailable: 4,
         category: 'rings',
@@ -57,7 +57,7 @@ const products = [
         id: 105,
         name: 'Starlet Glow Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+5', 'https://via.placeholder.com/300x300?text=Ring+5+Alt'],
+        images: ['assets/images/star.PNG', 'https://via.placeholder.com/300x300?text=Ring+5+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -67,7 +67,7 @@ const products = [
         id: 106,
         name: 'Divine Heart Ring',
         price: 99,
-        images: ['https://via.placeholder.com/300x300?text=Ring+6', 'https://via.placeholder.com/300x300?text=Ring+6+Alt'],
+        images: ['assets/images/love.PNG', 'https://via.placeholder.com/300x300?text=Ring+6+Alt'],
         inStock: false,
         qtyAvailable: 0,
         category: 'rings',
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
