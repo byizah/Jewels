@@ -492,9 +492,9 @@ const products = [
     // Earrings
     {
         id: 201,
-        name: 'Rose Gold Sphere Earrings',
+        name: 'Crescent White Earrings',
         price: 342,
-        images: ['https://via.placeholder.com/300x300?text=Earring+1', 'https://via.placeholder.com/300x300?text=Earring+1+Alt'],
+        images: ['assets/images/crescentwhiteearrings.jpg', 'assets/images/crescentwhiteearrings.jpg'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -502,9 +502,9 @@ const products = [
     },
     {
         id: 202,
-        name: 'Golden Prism Earrings',
+        name: 'Gold Rose Studs',
         price: 149,
-        images: ['https://via.placeholder.com/300x300?text=Earring+2'],
+        images: ['assets/images/goldrosestuds.jpg'],
         inStock: false,
         qtyAvailable: 10,
         category: 'earrings',
@@ -512,9 +512,9 @@ const products = [
     },
     {
         id: 203,
-        name: 'Flower Cluster Earrings',
+        name: 'Heart Enamel Earrings',
         price: 79,
-        images: ['https://via.placeholder.com/300x300?text=Flower+Earrings', 'https://via.placeholder.com/300x300?text=Flower+Earrings+2', 'https://via.placeholder.com/300x300?text=Flower+Earrings+3'],
+        images: ['assets/images/heartenamelearrings.jpg', 'https://via.placeholder.com/300x300?text=Flower+Earrings+2', 'https://via.placeholder.com/300x300?text=Flower+Earrings+3'],
         inStock: false,
         qtyAvailable: 9,
         category: 'earrings',
@@ -524,7 +524,7 @@ const products = [
         id: 204,
         name: 'Gold Huggie Hoop Earrings',
         price: 286,
-        images: ['https://via.placeholder.com/300x300?text=Earring+4', 'https://via.placeholder.com/300x300?text=Earring+4+Alt'],
+        images: ['assets/images/Goldhuggiehoopearrings.JPG', 'assets/images/Goldhuggiehoopearrings1.JPG'],
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
@@ -532,9 +532,9 @@ const products = [
     },
     {
         id: 205,
-        name: 'Swirl Earrings',
+        name: 'Dangle Stud',
         price: 149,
-        images: ['https://via.placeholder.com/300x300?text=Earring+5', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
+        images: ['assets/images/danglestud.jpg', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
         inStock: false,
         qtyAvailable: 15,
         category: 'earrings',
@@ -542,9 +542,9 @@ const products = [
     },
     {
         id: 206,
-        name: 'Rose Gold Huggie Hoop Earrings',
+        name: 'Pear Petal Earrings',
         price: 286,
-        images: ['https://via.placeholder.com/300x300?text=Earring+6', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
+        images: ['assets/images/pearpetalearrings.jpg', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -552,9 +552,9 @@ const products = [
     },
     {
         id: 207,
-        name: 'Vema Rose Gold Earrings',
+        name: 'Gold Pepper Hoops',
         price: 254,
-        images: ['https://via.placeholder.com/300x300?text=Earring+7'],
+        images: ['assets/images/goldpepperhoops.jpg'],
         inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
@@ -562,9 +562,9 @@ const products = [
     },
     {
         id: 208,
-        name: 'Pearl Elegant Rose Gold Earrings',
+        name: 'Golden Hoops',
         price: 269,
-        images: ['https://via.placeholder.com/300x300?text=Earring+8', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
+        images: ['assets/images/goldenhoop.jpg', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
         inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
@@ -574,7 +574,7 @@ const products = [
         id: 209,
         name: 'Halo Stud Earrings',
         price: 310,
-        images: ['https://via.placeholder.com/300x300?text=Earring+9'],
+        images: ['assets/images/Halostudearrings.JPG'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -582,9 +582,9 @@ const products = [
     },
     {
         id: 210,
-        name: 'Vema Silver Earrings',
+        name: 'Blossom Drop Earrings',
         price: 254,
-        images: ['https://via.placeholder.com/300x300?text=Earring+10'],
+        images: ['assets/images/blossomdropearrings.jpg'],
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
