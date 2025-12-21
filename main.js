@@ -493,17 +493,17 @@ const products = [
     {
         id: 201,
         name: 'Crescent White Earrings',
-        price: 342,
+        price: 349,
         images: ['assets/images/crescentwhiteearrings.jpg', 'assets/images/crescentwhiteearrings.jpg'],
         inStock: true,
-        qtyAvailable: 0,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'
     },
     {
         id: 202,
         name: 'Gold Rose Studs',
-        price: 149,
+        price: 99,
         images: ['assets/images/goldrosestuds.jpg'],
         inStock: true,
         qtyAvailable: 10,
@@ -513,7 +513,7 @@ const products = [
     {
         id: 203,
         name: 'Heart Enamel Earrings',
-        price: 79,
+        price: 129,
         images: ['assets/images/heartenamelearrings.jpg', 'https://via.placeholder.com/300x300?text=Flower+Earrings+2', 'https://via.placeholder.com/300x300?text=Flower+Earrings+3'],
         inStock: true,
         qtyAvailable: 9,
@@ -533,7 +533,7 @@ const products = [
     {
         id: 205,
         name: 'Dangle Stud',
-        price: 149,
+        price: 109,
         images: ['assets/images/danglestud.jpg', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
         inStock: true,
         qtyAvailable: 15,
@@ -543,7 +543,7 @@ const products = [
     {
         id: 206,
         name: 'Pear Petal Earrings',
-        price: 286,
+        price: 129,
         images: ['assets/images/pearpetalearrings.jpg', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
         inStock: true,
         qtyAvailable: 0,
@@ -553,7 +553,7 @@ const products = [
     {
         id: 207,
         name: 'Gold Pepper Hoops',
-        price: 254,
+        price: 119,
         images: ['assets/images/goldpepperhoops.jpg'],
         inStock: true,
         qtyAvailable: 1,
@@ -563,7 +563,7 @@ const products = [
     {
         id: 208,
         name: 'Golden Hoops',
-        price: 269,
+        price: 119,
         images: ['assets/images/goldenhoop.jpg', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
         inStock: true,
         qtyAvailable: 1,
@@ -583,7 +583,7 @@ const products = [
     {
         id: 210,
         name: 'Blossom Drop Earrings',
-        price: 254,
+        price: 109,
         images: ['assets/images/blossomdropearrings.jpg'],
         inStock: true,
         qtyAvailable: 0,
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
