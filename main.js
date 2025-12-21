@@ -592,9 +592,9 @@ const products = [
     },
     {
         id: 209,
-        name: 'Halo Stud Earrings',
+        name: 'Triangle Huggie Earrings',
         price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
+        images: ['assets/images/trianglehuggieearring.jpg'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -602,9 +602,9 @@ const products = [
     },
     {
         id: 209,
-        name: 'Halo Stud Earrings',
+        name: 'Rose Red Drops',
         price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
+        images: ['assets/images/rosereddrops.jpg'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -612,9 +612,9 @@ const products = [
     },
     {
         id: 209,
-        name: 'Halo Stud Earrings',
+        name: 'Locket Love Earrings',
         price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
+        images: ['assets/images/locketloveearring.jpg'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -622,9 +622,9 @@ const products = [
     },
     {
         id: 209,
-        name: 'Halo Stud Earrings',
+        name: 'Gold Recta Earrings',
         price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
+        images: ['assets/images/goldrectaearring.jpg'],
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
@@ -1156,6 +1156,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
