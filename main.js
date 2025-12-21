@@ -473,7 +473,7 @@ const products = [
         name: 'Purple Recta Necklace',
         price: 199,
         images: ['assets/images/purplerectanecklace.jpg', 'assets/images/purplerectanecklace1.jpg', 'assets/images/purple recta.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Minimal gold-tone necklace with a lavender gemstone pendant.'
@@ -1086,6 +1086,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
