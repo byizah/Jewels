@@ -593,7 +593,7 @@ const products = [
     {
         id: 211,
         name: 'Triangle Huggie Earrings',
-        price: 310,
+        price: 129,
         images: ['assets/images/trianglehuggieearring.jpg'],
         inStock: true,
         qtyAvailable: 2,
@@ -603,7 +603,7 @@ const products = [
     {
         id: 212,
         name: 'Rose Red Drops',
-        price: 310,
+        price: 169,
         images: ['assets/images/rosereddrops.jpg'],
         inStock: true,
         qtyAvailable: 2,
@@ -613,7 +613,7 @@ const products = [
     {
         id: 213,
         name: 'Locket Love Earrings',
-        price: 310,
+        price: 109,
         images: ['assets/images/locketloveearring.jpg'],
         inStock: true,
         qtyAvailable: 2,
@@ -623,7 +623,7 @@ const products = [
     {
         id: 214,
         name: 'Gold Recta Earrings',
-        price: 310,
+        price: 169,
         images: ['assets/images/goldrectaearring.jpg'],
         inStock: false,
         qtyAvailable: 2,
@@ -1086,6 +1086,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
