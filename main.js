@@ -100,7 +100,7 @@ const products = [
         name: 'Trinity multi bracelet',
         price: 399,
         images: ['assets/images/trinitymultibracelet.jpg', 'assets/images/trinitymultibracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'
@@ -210,7 +210,7 @@ const products = [
         name: 'Golden curve bracelet',
         price: 229,
         images: ['assets/images/goldencurvebracelet.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
@@ -223,7 +223,7 @@ const products = [
         name: 'Gold Heart Necklace',
         price: 249,
         images: ['assets/images/Goldheartnecklace.JPG', 'assets/images/Goldheartnecklace2.png', 'assets/images/Goldheartnecklace1.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Delicate gold heart pendant necklace. A timeless piece for any jewelry collection.'
@@ -313,7 +313,7 @@ const products = [
         name: 'Rainbow gem Necklace',
         price: 369,
         images: ['assets/images/RainbowDropnecklace.jpg', 'assets/images/RainbowDropnecklace1.jpg', 'assets/images/RainbowDropnecklace2.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace adorned with multiple small, dangling bezel-set gemstones of various colors.'
@@ -373,7 +373,7 @@ const products = [
         name: '11:11 love necklace',
         price: 199,
         images: ['assets/images/1111lovenecklace.jpg', 'assets/images/1111lovenecklace1.jpg', 'https://via.placeholder.com/300x300?text=Necklace+16+Alt2'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with a small heart-shaped pendant engraved with "11:11".'
@@ -423,7 +423,7 @@ const products = [
         name: 'Lumi stone Necklace',
         price: 199,
         images: ['assets/images/lumistonenecklace.jpg', 'assets/images/lumistonenecklace1.jpg', 'assets/images/lumi stone.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone necklace with a dainty round crystal pendant.'
@@ -1046,6 +1046,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
