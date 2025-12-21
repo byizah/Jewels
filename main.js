@@ -629,76 +629,6 @@ const products = [
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 209,
-        name: 'Halo Stud Earrings',
-        price: 310,
-        images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
     }
 ];
 
@@ -1156,6 +1086,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
