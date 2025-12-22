@@ -188,7 +188,7 @@ const products = [
     {
         id: 12,
         name: 'Gold stone bracelet',
-        price: 129,
+        price: 179,
         images: ['assets/images/goldstonebracelet.jpg', 'assets/images/goldstonebracelet1.jpg', 'assets/images/goldencurvebracelet.jpg'],
         inStock: true,
         qtyAvailable: 2,
@@ -631,7 +631,7 @@ const products = [
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
+        id: 215,
         name: 'Auric Angle earrings',
         price: 119,
         images: ['assets/images/Auric angle earrings(119).jpg'],
@@ -641,71 +641,85 @@ const products = [
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
+        id: 216,
+        name: 'Bow Earrings',
+        price: 199,
+        images: ['assets/images/bow earrings(199).jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Stunning halo design studs. Sparkle and shine.'
+    },
+    {
+        id: 217,
+        name: 'Golden Ripple Earrings',
+        price: 119,
+        images: ['assets/images/golden ripple earrings(119)_11zon.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Stunning halo design studs. Sparkle and shine.'
+    },
+    {
+        id: 218,
+        name: 'Golden Wave Earrings',
+        price: 272,
+        images: ['assets/images/golden wave earrings(272)_11zon.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
+        category: 'earrings',
+        description: 'Stunning halo design studs. Sparkle and shine.'
+    },
+    {
+        id: 219,
+        name: 'Leaf Dangle Earrings',
+        price: 300,
+        images: ['assets/images/leaf dangle earrings(300).jpg'],
+        inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
-        qtyAvailable: 2,
+        id: 220,
+        name: 'Locket love earrings',
+        price: 116,
+        images: ['assets/images/locket love earrings(116)_11zon.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
-        qtyAvailable: 2,
+        id: 221,
+        name: 'Luxe Curve Earrings',
+        price: 299,
+        images: ['assets/images/luxe curve earrings (299).jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
-        qtyAvailable: 2,
+    id: 222,
+        name: 'Royal Black Earrings',
+        price: 129,
+        images: ['assets/images/royal black earrings(129).jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
-        qtyAvailable: 2,
+        id: 223,
+        name: 'Royal Plum Earrings',
+        price: 129,
+        images: ['assets/images/royal plum earrings(129)_11zon.jpg'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-    {
-        id: 214,
-        name: 'Gold Recta Earrings',
-        price: 169,
-        images: ['assets/images/goldrectaearring.jpg'],
-        inStock: false,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Stunning halo design studs. Sparkle and shine.'
-    },
-
-
-
-
-
-    
+    },    
 ];
 
 let cart = [];
@@ -1162,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
