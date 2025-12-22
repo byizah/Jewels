@@ -683,7 +683,7 @@ const products = [
     {
         id: 220,
         name: 'Locket love earrings',
-        price: 116,
+        price: 109,
         images: ['assets/images/locket love earrings(116)_11zon.jpg'],
         inStock: true,
         qtyAvailable: 1,
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
