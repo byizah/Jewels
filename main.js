@@ -83,7 +83,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
-        description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'
+        description: 'An elegant gold-tone bangle featuring a modern hexagonal honeycomb design accented with shimmering crystals and white inlays. ✨'
     },
     {
         id: 2,
@@ -103,7 +103,7 @@ const products = [
         inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
-        description: 'Beautiful butterfly charm bracelet in gold finish. Adds a touch of elegance to any outfit.'
+        description: 'A sophisticated gold-tone bangle featuring a stacked, four-band design that creates an effortless layered look. It is accented with delicate crystals and a signature-engraved clasp for a refined, high-end finish. ✨'
     },
     {
         id: 4,
@@ -123,7 +123,7 @@ const products = [
         inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
-        description: 'Double-layered design with star charm. Versatile and stylish.'
+        description: 'A sleek gold-tone bangle with a timeless Roman numeral design. Perfect for everyday elegance and special moments. ✨'
     },
     {
         id: 6,
@@ -203,7 +203,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'bracelets',
-        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+        description: 'Delicate gold-tone chain adorned with elegant black clover motifs. A timeless piece that adds subtle luxury to everyday looks. ✨'
     },
     {
         id: 14,
@@ -213,7 +213,7 @@ const products = [
         inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
-        description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
+        description: 'A minimalist gold-tone chain featuring a sleek curved bar detail. Perfect for everyday wear and effortless layering. ✨'
     },
 
 
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
