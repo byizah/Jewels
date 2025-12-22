@@ -508,7 +508,7 @@ const products = [
         inStock: true,
         qtyAvailable: 10,
         category: 'earrings',
-        description: 'Gold-toned rose-shaped stud earrings with a textured, detailed design and a small faux pearl set in the center of each. ✨'
+        description: 'Gold-toned rose-shaped stud earrings with a textured, detailed design and a small faux pearl set in the center of each. '
     },
     {
         id: 203,
@@ -518,7 +518,7 @@ const products = [
         inStock: true,
         qtyAvailable: 9,
         category: 'earrings',
-        description: 'Burgundy enamel heart studs with a gold-tone edge. ✨'
+        description: 'Burgundy enamel heart studs with a gold-tone edge. '
     },
     {
         id: 204,
@@ -538,7 +538,7 @@ const products = [
         inStock: true,
         qtyAvailable: 15,
         category: 'earrings',
-        description: 'Gold-toned drop earrings featuring an opalescent white top piece and a glossy, dark reddish-brown teardrop bottom. ✨'
+        description: 'Gold-toned drop earrings featuring an opalescent white top piece and a glossy, dark reddish-brown teardrop bottom. '
     },
     {
         id: 206,
@@ -548,7 +548,7 @@ const products = [
         inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
-        description: 'Gold-toned dangle earrings composed of several clustered white, translucent, pearly petals resembling a cascading floral design. ✨'
+        description: 'Gold-toned dangle earrings composed of several clustered white, translucent, pearly petals resembling a cascading floral design. '
     },
     {
         id: 207,
@@ -558,7 +558,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky, gold-toned hoop earrings with an irregular, geometric shape. ✨'
+        description: 'Chunky, gold-toned hoop earrings with an irregular, geometric shape. '
     },
     {
         id: 208,
@@ -568,7 +568,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular, V-shaped profile. ✨'
+        description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular, V-shaped profile. '
     },
     {
         id: 209,
@@ -588,7 +588,7 @@ const products = [
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
-        description: 'Gold-toned four-petal flower stud earrings with a glossy off-white/cream enamel finish and a small, jeweled or textured center. ✨'
+        description: 'Gold-toned four-petal flower stud earrings with a glossy off-white/cream enamel finish and a small, jeweled or textured center. '
     },
     {
         id: 211,
@@ -598,7 +598,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Gold-toned drop earrings featuring a small gold rectangular top and a large, hammered silver or light gold-toned metallic bottom piece. ✨'
+        description: 'Gold-toned drop earrings featuring a small gold rectangular top and a large, hammered silver or light gold-toned metallic bottom piece. '
     },
     {
         id: 212,
@@ -608,7 +608,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Red rhinestone drop earrings featuring a rectangular stud connecting to a larger, faceted teardrop crystal, set in a gold-tone metal. ✨'
+        description: 'Red rhinestone drop earrings featuring a rectangular stud connecting to a larger, faceted teardrop crystal, set in a gold-tone metal. '
     },
     {
         id: 213,
@@ -618,7 +618,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. ✨'
+        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. '
     },
     {
         id: 214,
@@ -628,7 +628,7 @@ const products = [
         inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Double rectangular drop earrings featuring large amber-toned crystals on a rose gold setting. ✨'
+        description: 'Double rectangular drop earrings featuring large amber-toned crystals on a rose gold setting. '
     },
     {
         id: 215,
@@ -638,7 +638,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky gold-toned huggie hoop earrings with a shiny finish and a distinct geometric, pentagonal, or V-shaped profile. ✨'
+        description: 'Chunky gold-toned huggie hoop earrings with a shiny finish and a distinct geometric, pentagonal, or V-shaped profile. '
     },
     {
         id: 216,
@@ -648,7 +648,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Small, shiny gold-toned bow-shaped stud earrings with a smooth, polished finish. ✨'
+        description: 'Small, shiny gold-toned bow-shaped stud earrings with a smooth, polished finish. '
     },
     {
         id: 217,
@@ -668,7 +668,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Minimalist gold-tone wavy hoops with an open, irregular, and fluid teardrop shape. ✨'
+        description: 'Minimalist gold-tone wavy hoops with an open, irregular, and fluid teardrop shape. '
     },
     {
         id: 219,
@@ -678,7 +678,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Gold-colored drop earrings featuring Monstera leaf charms. ✨'
+        description: 'Gold-colored drop earrings featuring Monstera leaf charms. '
     },
     {
         id: 220,
@@ -688,7 +688,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. ✨'
+        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. '
     },
     {
         id: 221,
@@ -698,7 +698,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Small, shiny gold-toned C-shaped clip or cuff earrings with a thick, sculptural design, appearing to wrap around the lobe. ✨'
+        description: 'Small, shiny gold-toned C-shaped clip or cuff earrings with a thick, sculptural design, appearing to wrap around the lobe. '
     },
     {
     id: 222,
@@ -708,7 +708,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Flower-shaped stud earrings with glossy black enamel petals and a small gold-toned center. ✨'
+        description: 'Flower-shaped stud earrings with glossy black enamel petals and a small gold-toned center. '
     },
     {
         id: 223,
@@ -718,7 +718,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Flower-shaped stud earrings with deep burgundy or maroon enamel petals, a gold-tone border, and a small, clustered gold center. ✨'
+        description: 'Flower-shaped stud earrings with deep burgundy or maroon enamel petals, a gold-tone border, and a small, clustered gold center. '
     },    
 ];
 
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
