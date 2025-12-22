@@ -688,7 +688,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. '
+        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated  or teardrop shape. '
     },
     {
         id: 221,
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
