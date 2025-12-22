@@ -498,7 +498,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Abstract hoop earrings featuring a gold-tone radial, fan-like texture half-circle set against a creamy white or marbled acrylic half-circle. ✨'
+        description: 'Elegant rose gold sphere studs. Perfect for everyday wear.'
     },
     {
         id: 202,
@@ -508,7 +508,7 @@ const products = [
         inStock: true,
         qtyAvailable: 10,
         category: 'earrings',
-        description: 'Gold-toned rose-shaped stud earrings with a textured, detailed design and a small faux pearl set in the center of each. ✨'
+        description: 'Geometric prism design in gold. Modern and eye-catching.'
     },
     {
         id: 203,
@@ -518,7 +518,7 @@ const products = [
         inStock: true,
         qtyAvailable: 9,
         category: 'earrings',
-        description: 'Burgundy enamel heart studs with a gold-tone edge. ✨'
+        description: 'Delicate flower cluster studs. Feminine and charming.'
     },
     {
         id: 204,
@@ -538,7 +538,7 @@ const products = [
         inStock: true,
         qtyAvailable: 15,
         category: 'earrings',
-        description: 'Gold-toned drop earrings featuring an opalescent white top piece and a glossy, dark reddish-brown teardrop bottom. ✨'
+        description: 'Unique swirl design. Modern and elegant.'
     },
     {
         id: 206,
@@ -548,7 +548,7 @@ const products = [
         inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
-        description: 'Gold-toned dangle earrings composed of several clustered white, translucent, pearly petals resembling a cascading floral design. ✨'
+        description: 'Rose gold huggie hoops. Chic and sophisticated.'
     },
     {
         id: 207,
@@ -558,7 +558,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky, gold-toned hoop earrings with an irregular, geometric shape. ✨'
+        description: 'Elegant Vema design in rose gold. Perfect for any occasion.'
     },
     {
         id: 208,
@@ -568,7 +568,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular, V-shaped profile. ✨'
+        description: 'Beautiful pearl studs in rose gold. Classic elegance.'
     },
     {
         id: 209,
@@ -588,7 +588,7 @@ const products = [
         inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
-        description: 'Gold-toned four-petal flower stud earrings with a glossy off-white/cream enamel finish and a small, jeweled or textured center. ✨'
+        description: 'Elegant Vema design in silver. Versatile and beautiful.'
     },
     {
         id: 211,
@@ -598,7 +598,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Gold-toned drop earrings featuring a small gold rectangular top and a large, hammered silver or light gold-toned metallic bottom piece. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 212,
@@ -608,7 +608,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Red rhinestone drop earrings featuring a rectangular stud connecting to a larger, faceted teardrop crystal, set in a gold-tone metal. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 213,
@@ -618,7 +618,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 214,
@@ -628,7 +628,7 @@ const products = [
         inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Double rectangular drop earrings featuring large amber-toned crystals on a rose gold setting. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 215,
@@ -638,7 +638,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky gold-toned huggie hoop earrings with a shiny finish and a distinct geometric, pentagonal, or V-shaped profile. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 216,
@@ -648,7 +648,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Small, shiny gold-toned bow-shaped stud earrings with a smooth, polished finish. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 217,
@@ -668,7 +668,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Minimalist gold-tone wavy hoops with an open, irregular, and fluid teardrop shape. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 219,
@@ -678,7 +678,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Gold-colored drop earrings featuring Monstera leaf charms. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 220,
@@ -688,7 +688,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 221,
@@ -698,7 +698,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Small, shiny gold-toned C-shaped clip or cuff earrings with a thick, sculptural design, appearing to wrap around the lobe. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
     id: 222,
@@ -708,7 +708,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Flower-shaped stud earrings with glossy black enamel petals and a small gold-toned center. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },
     {
         id: 223,
@@ -718,7 +718,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Flower-shaped stud earrings with deep burgundy or maroon enamel petals, a gold-tone border, and a small, clustered gold center. ✨'
+        description: 'Stunning halo design studs. Sparkle and shine.'
     },    
 ];
 
@@ -1176,7 +1176,6 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
-
 
 
 
