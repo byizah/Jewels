@@ -548,7 +548,7 @@ const products = [
         inStock: true,
         qtyAvailable: 0,
         category: 'earrings',
-        description: 'Gold-toned dangle earrings composed of several clustered white, translucent, pearly petals resembling a cascading floral design. '
+        description: 'Gold-toned dangle earrings composed of several clustered white translucent, pearly petals resembling a cascading floral design. '
     },
     {
         id: 207,
@@ -558,7 +558,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Chunky, gold-toned hoop earrings with an irregular, geometric shape. '
+        description: 'Chunky, gold-toned hoop earrings with an irregular geometric shape. '
     },
     {
         id: 208,
@@ -568,7 +568,7 @@ const products = [
         inStock: true,
         qtyAvailable: 1,
         category: 'earrings',
-        description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular, V-shaped profile. '
+        description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular V-shaped profile. '
     },
     {
         id: 209,
@@ -618,7 +618,7 @@ const products = [
         inStock: true,
         qtyAvailable: 2,
         category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated 'C' or teardrop shape. '
+        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated  or teardrop shape. '
     },
     {
         id: 214,
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
