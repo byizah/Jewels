@@ -190,8 +190,8 @@ const products = [
         name: 'Gold stone bracelet',
         price: 179,
         images: ['assets/images/goldstonebracelet.jpg', 'assets/images/goldstonebracelet1.jpg', 'assets/images/goldencurvebracelet.jpg'],
-        inStock: true,
-        qtyAvailable: 2,
+        inStock: false,
+        qtyAvailable: 0,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
     },
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
