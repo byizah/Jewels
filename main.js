@@ -233,7 +233,7 @@ const products = [
         name: 'Mint grace pendant necklace',
         price: 199,
         images: ['assets/images/Mintgracependantnecklace20.jpg', 'assets/images/Mintgracependantnecklace1.JPG', 'assets/images/Mintgracependantnecklace2.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with a small, rounded square pendant featuring a smooth teal/blue-green stone.'
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
