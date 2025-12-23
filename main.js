@@ -80,7 +80,7 @@ const products = [
         name: 'Hexagon bracelet',
         price: 379,
         images: ['assets/images/hexagonbracelet.jpg', 'assets/images/hexagonbracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Elegant double-layered bracelet with a delicate gold heart charm. Perfect for everyday wear.'
@@ -243,7 +243,7 @@ const products = [
         name: 'Black Aura Necklace',
         price: 199,
         images: ['assets/images/BlackAuranecklace1.JPG', 'assets/images/BlackAuranecklace.JPG', 'assets/images/BlackAuranecklace2.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A minimalist gold-tone necklace featuring a sleek black stone pendant, perfect for adding a subtle, modern touch to everyday outfits.'
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
