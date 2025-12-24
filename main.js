@@ -433,8 +433,8 @@ const products = [
         name: 'Golden flower Necklace',
         price: 199,
         images: ['assets/images/goldenflowernecklace.jpg', 'assets/images/goldenflowernecklace1.jpg', 'assets/images/golden flower.PNG'],
-        inStock: true,
-        qtyAvailable: 1,
+        inStock: false,
+        qtyAvailable: 0,
         category: 'necklaces',
         description: 'Gold-tone floral pendant necklace with a subtle crystal accent.'
     },
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
