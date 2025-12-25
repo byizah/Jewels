@@ -263,7 +263,7 @@ const products = [
         name: 'Rose Gold Layered Necklace',
         price: 299,
         images: ['assets/images/Rosegoldlayerednecklace.JPG', 'assets/images/Rosegoldlayerednecklace1.png'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Luxurious rose gold layered necklace. Adds sophistication to any look.'
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
