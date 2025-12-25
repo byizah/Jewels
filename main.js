@@ -15,9 +15,9 @@ const products = [
     // Rings - All ₹99
     {
         id: 101,
-        name: 'Eternal Circle Ring',
+        name: 'Pulse Band Ring',
         price: 99,
-        images: ['assets/images/circle.PNG', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
+        images: ['assets/images/Pulse band ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -25,9 +25,9 @@ const products = [
     },
     {
         id: 102,
-        name: 'GoldQuad Ring',
+        name: 'Flora Grace Ring',
         price: 99,
-        images: ['assets/images/square.PNG', 'https://via.placeholder.com/300x300?text=Ring+2+Alt'],
+        images: ['assets/images/flora grace ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+2+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -35,29 +35,29 @@ const products = [
     },
     {
         id: 103,
-        name: 'TriAura Ring',
+        name: 'Golden Ripple Ring',
         price: 99,
-        images: ['assets/images/triangle.PNG', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
+        images: ['assets/images/Golden Ripple Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
         inStock: true,
-        qtyAvailable: 3,
+        qtyAvailable: 1,
         category: 'rings',
         description: 'Minimalist silver band. Sleek and modern.'
     },
     {
         id: 104,
-        name: 'Floria Ring',
+        name: 'Sunflare Ring',
         price: 99,
-        images: ['assets/images/flower.JPG', 'https://via.placeholder.com/300x300?text=Ring+4+Alt'],
+        images: ['assets/images/Sunflare Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+4+Alt'],
         inStock: true,
-        qtyAvailable: 4,
+        qtyAvailable: 1,
         category: 'rings',
         description: 'Delicate butterfly design. Charming and elegant.'
     },
     {
         id: 105,
-        name: 'Starlet Glow Ring',
+        name: 'Empress Ring',
         price: 99,
-        images: ['assets/images/star.PNG', 'https://via.placeholder.com/300x300?text=Ring+5+Alt'],
+        images: ['assets/images/Empress Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+5+Alt'],
         inStock: true,
         qtyAvailable: 2,
         category: 'rings',
@@ -65,15 +65,279 @@ const products = [
     },
     {
         id: 106,
-        name: 'Divine Heart Ring',
+        name: 'Ocean Halo Ring',
         price: 99,
-        images: ['assets/images/love.PNG', 'https://via.placeholder.com/300x300?text=Ring+6+Alt'],
-        inStock: false,
-        qtyAvailable: 0,
+        images: ['assets/images/Ocean Halo Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+6+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 107,
+        name: 'Forever Duo Ring',
+        price: 99,
+        images: ['assets/images/Forever Duo Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+7+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 108,
+        name: 'Ocean Muse Ring',
+        price: 99,
+        images: ['assets/images/Ocean Muse Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+8+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 109,
+        name: 'Aurea Flux Ring',
+        price: 99,
+        images: ['assets/images/Aurea Flux Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+9+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 110,
+        name: 'Butterfly Grace Ring',
+        price: 99,
+        images: ['assets/images/Butterfly Grace Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+10+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 111,
+        name: 'Aurum Weave Ring',
+        price: 99,
+        images: ['assets/images/Aurum Weave Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+11+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 112,
+        name: 'Orbit Ring',
+        price: 99,
+        images: ['assets/images/Orbit Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+12+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 113,
+        name: 'Golden Crest Ring',
+        price: 99,
+        images: ['assets/images/Golden Crest Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+13+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 114,
+        name: 'Golden Tidal Ring',
+        price: 99,
+        images: ['assets/images/Golden Tidal Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+14+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 115,
+        name: 'Golden Wave Ring',
+        price: 99,
+        images: ['assets/images/Golden Wave Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+15+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 116,
+        name: 'Stellar Band Ring',
+        price: 99,
+        images: ['assets/images/Stellar Band Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+16+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 117,
+        name: 'Gilded Flutter Ring',
+        price: 99,
+        images: ['assets/images/Gilded Flutter Ring .JPG', 'https://via.placeholder.com/300x300?text=Ring+17+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 118,
+        name: 'Golden Duo Ring',
+        price: 99,
+        images: ['assets/images/Golden Duo Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+18+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 119,
+        name: 'Golden Chain Ring',
+        price: 99,
+        images: ['assets/images/Golden Chain Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+19+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 120,
+        name: 'Rosé Bow Ring',
+        price: 99,
+        images: ['assets/images/Rosé Bow Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+20+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 121,
+        name: 'Everlight Band Ring',
+        price: 99,
+        images: ['assets/images/Everlight Band Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+21+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 122,
+        name: 'Promise Ring',
+        price: 99,
+        images: ['assets/images/Promise Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+22+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 123,
+        name: 'Verdant Promise Ring',
+        price: 99,
+        images: ['assets/images/Verdant Promise Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+23+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 124,
+        name: 'Ophira Coil Ring',
+        price: 99,
+        images: ['assets/images/Ophira Coil Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+24+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 125,
+        name: 'Golden Coil Ring',
+        price: 99,
+        images: ['assets/images/Golden Coil Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+25+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 126,
+        name: 'Golden Pods Ring',
+        price: 99,
+        images: ['assets/images/Golden Pods Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+26+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 127,
+        name: 'Golden Surge Ring',
+        price: 99,
+        images: ['assets/images/Golden Surge Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+27+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 128,
+        name: 'Golden Fold Ring',
+        price: 99,
+        images: ['assets/images/Golden Fold Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+28+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 129,
+        name: 'Aurelia Butterfly Ring',
+        price: 99,
+        images: ['aassets/images/Aurelia Butterfly Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+29+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 130,
+        name: 'Golden Bow Ring',
+        price: 99,
+        images: ['assets/images/Golden Bow ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+30+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 131,
+        name: 'Golden Infinity Ring',
+        price: 99,
+        images: ['assets/images/Golden Infinity Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+31+Alt'],
+        inStock: true,
+        qtyAvailable: 01,
+        category: 'rings',
+        description: 'Cute heart design ring. Perfect gift option.'
+    },
+    {
+        id: 132,
+        name: 'Golden Droplet Ring',
+        price: 99,
+        images: ['assets/images/Golden Droplet Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+32+Alt'],
+        inStock: true,
+        qtyAvailable: 1,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
     },
 
+
+
+
+    
     // Bracelets
     {
         id: 1,
@@ -215,6 +479,7 @@ const products = [
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
     },
+    
 
 
     // Necklaces
@@ -1176,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
