@@ -297,7 +297,7 @@ const products = [
         id: 129,
         name: 'Aurelia Butterfly Ring',
         price: 99,
-        images: ['aassets/images/Aurelia Butterfly Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+29+Alt'],
+        images: ['assets/images/Aurelia Butterfly Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+29+Alt'],
         inStock: true,
         qtyAvailable: 01,
         category: 'rings',
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
