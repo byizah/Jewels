@@ -160,7 +160,7 @@ const products = [
         name: 'Lyra rose gold bracelet',
         price: 299,
         images: ['assets/images/lyrarosegoldbracelet.jpg', 'assets/images/lyrarosegoldbracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
@@ -1176,6 +1176,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
