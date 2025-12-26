@@ -870,7 +870,7 @@ const products = [
         name: 'Rose Red Drops',
         price: 169,
         images: ['assets/images/rosereddrops.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Red rhinestone drop earrings featuring a rectangular stud connecting to a larger, faceted teardrop crystal, set in a gold-tone metal. '
@@ -920,7 +920,7 @@ const products = [
         name: 'Golden Ripple Earrings',
         price: 119,
         images: ['assets/images/golden ripple earrings(119)_11zon.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
@@ -940,7 +940,7 @@ const products = [
         name: 'Leaf Dangle Earrings',
         price: 300,
         images: ['assets/images/leaf dangle earrings(300).jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Gold-colored drop earrings featuring Monstera leaf charms. '
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
