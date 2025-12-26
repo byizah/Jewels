@@ -18,7 +18,7 @@ const products = [
         name: 'Pulse Band Ring',
         price: 99,
         images: ['assets/images/Pulse band ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+1+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'rings',
         description: 'Elegant classic gold ring. Simple and timeless.'
@@ -78,7 +78,7 @@ const products = [
         name: 'Forever Duo Ring',
         price: 99,
         images: ['assets/images/Forever Duo Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+7+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -118,7 +118,7 @@ const products = [
         name: 'Aurum Weave Ring',
         price: 99,
         images: ['assets/images/Aurum Weave Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+11+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -228,7 +228,7 @@ const products = [
         name: 'Promise Ring',
         price: 99,
         images: ['assets/images/Promise Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+22+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -268,7 +268,7 @@ const products = [
         name: 'Golden Pods Ring',
         price: 99,
         images: ['assets/images/Golden Pods Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+26+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -308,7 +308,7 @@ const products = [
         name: 'Golden Bow Ring',
         price: 99,
         images: ['assets/images/Golden Bow ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+30+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
