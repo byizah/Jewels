@@ -248,7 +248,7 @@ const products = [
         name: 'Ophira Coil Ring',
         price: 99,
         images: ['assets/images/Ophira Coil Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+24+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -790,7 +790,7 @@ const products = [
         name: 'Gold Huggie Hoop Earrings',
         price: 286,
         images: ['assets/images/Goldhuggiehoopearrings.JPG', 'assets/images/Goldhuggiehoopearrings1.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Classic gold huggie hoops. Versatile and stylish.'
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
