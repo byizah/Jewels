@@ -548,7 +548,7 @@ const products = [
         name: 'Double Layered Snake Chain Necklace',
         price: 252,
         images: ['assets/images/Doublelayeredsnakechainnecklace.JPG', 'assets/images/Doublelayeredsnakechainnecklace1.png'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'necklaces',
         description: 'Sleek double-layered snake chain. Minimalist elegance.'
@@ -648,7 +648,7 @@ const products = [
         name: 'Lavender oval pendant',
         price: 199,
         images: ['assets/images/lavenderovalpendant.jpg', 'assets/images/lavenderovalpendant1.jpg', 'https://via.placeholder.com/300x300?text=Necklace+17+Alt2'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone necklace with a small, oval purple gemstone pendant.'
@@ -718,7 +718,7 @@ const products = [
         name: 'Ivory blossom pendant',
         price: 199,
         images: ['assets/images/ivoryblossompendant.jpg', 'assets/images/ivoryblossompendant1.jpg', 'assets/images/ivory blossom.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A delicate gold-tone necklace featuring a floral-etched pendant with soft pastel details, designed to add a vintage-inspired elegance to everyday wear.'
@@ -800,7 +800,7 @@ const products = [
         name: 'Dangle Stud',
         price: 109,
         images: ['assets/images/danglestud.jpg', 'https://via.placeholder.com/300x300?text=Earring+5+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 15,
         category: 'earrings',
         description: 'Gold-toned drop earrings featuring an opalescent white top piece and a glossy, dark reddish-brown teardrop bottom. '
@@ -830,7 +830,7 @@ const products = [
         name: 'Golden Hoops',
         price: 119,
         images: ['assets/images/goldenhoop.jpg', 'https://via.placeholder.com/300x300?text=Earring+8+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Gold-toned chunky huggie hoop earrings with a shiny finish and an angular V-shaped profile. '
@@ -860,7 +860,7 @@ const products = [
         name: 'Triangle Huggie Earrings',
         price: 129,
         images: ['assets/images/trianglehuggieearring.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Gold-toned drop earrings featuring a small gold rectangular top and a large, hammered silver or light gold-toned metallic bottom piece. '
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
