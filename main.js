@@ -38,7 +38,7 @@ const products = [
         name: 'Golden Ripple Ring',
         price: 99,
         images: ['assets/images/Golden Ripple Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+3+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'rings',
         description: 'Minimalist silver band. Sleek and modern.'
@@ -88,7 +88,7 @@ const products = [
         name: 'Ocean Muse Ring',
         price: 99,
         images: ['assets/images/Ocean Muse Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+8+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -98,7 +98,7 @@ const products = [
         name: 'Aurea Flux Ring',
         price: 99,
         images: ['assets/images/Aurea Flux Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+9+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -288,7 +288,7 @@ const products = [
         name: 'Golden Fold Ring',
         price: 99,
         images: ['assets/images/Golden Fold Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+28+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -328,7 +328,7 @@ const products = [
         name: 'Golden Droplet Ring',
         price: 99,
         images: ['assets/images/Golden Droplet Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+32+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -394,7 +394,7 @@ const products = [
         name: 'Gold Double Layer Bracelet',
         price: 249,
         images: ['assets/images/Golddoublelayerbracelet.JPG', 'assets/images/goldencurvebracelet.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
@@ -414,7 +414,7 @@ const products = [
         name: 'Gold ivory bracelet',
         price: 349,
         images: ['assets/images/goldivorybracelet.jpg', 'assets/images/goldivorybracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
@@ -658,7 +658,7 @@ const products = [
         name: 'Flora dream necklace',
         price: 199,
         images: ['assets/images/floradreamnecklace.jpg', 'assets/images/floradreamnecklace1.jpg', 'https://via.placeholder.com/300x300?text=Necklace+18+Alt2'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold necklace with an oval floral pendant displaying a purple flower.'
@@ -678,7 +678,7 @@ const products = [
         name: 'Blue lotus pendant',
         price: 199,
         images: ['assets/images/bluelotuspendant.jpg', 'assets/images/bluelotuspendant1.jpg', 'assets/images/bluelotuspendent.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone necklace with a square floral pendant and pearl detail.'
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
