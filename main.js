@@ -568,7 +568,7 @@ const products = [
         name: 'Clover Double Chain Necklace',
         price: 322,
         images: ['assets/images/Cloverdoublechainnecklace.JPG', 'assets/images/Cloverdoublechainnecklace1.png'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Lucky clover charm with double chain. Stylish and meaningful.'
@@ -874,16 +874,6 @@ const products = [
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Red rhinestone drop earrings featuring a rectangular stud connecting to a larger, faceted teardrop crystal, set in a gold-tone metal. '
-    },
-    {
-        id: 213,
-        name: 'Locket Love Earrings',
-        price: 109,
-        images: ['assets/images/locketloveearring.jpg'],
-        inStock: true,
-        qtyAvailable: 2,
-        category: 'earrings',
-        description: 'Chunky gold-tone mini-hoops with a smooth, highly polished, slightly elongated  or teardrop shape. '
     },
     {
         id: 214,
@@ -1441,6 +1431,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
