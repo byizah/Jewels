@@ -148,7 +148,7 @@ const products = [
         name: 'Golden Tidal Ring',
         price: 99,
         images: ['assets/images/Golden Tidal Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+14+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -158,7 +158,7 @@ const products = [
         name: 'Golden Wave Ring',
         price: 99,
         images: ['assets/images/Golden Wave Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+15+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -178,7 +178,7 @@ const products = [
         name: 'Gilded Flutter Ring',
         price: 99,
         images: ['assets/images/Gilded Flutter Ring .JPG', 'https://via.placeholder.com/300x300?text=Ring+17+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -198,7 +198,7 @@ const products = [
         name: 'Golden Chain Ring',
         price: 99,
         images: ['assets/images/Golden Chain Ring.JPG', 'https://via.placeholder.com/300x300?text=Ring+19+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 01,
         category: 'rings',
         description: 'Cute heart design ring. Perfect gift option.'
@@ -354,7 +354,7 @@ const products = [
         name: 'Halo Heart Double Layer Bracelet',
         price: 249,
         images: ['assets/images/Haloheartdoublelayerbracelet.JPG', 'assets/images/goldencurvebracelet.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Stunning halo heart design with double chain layers. A must-have accessory.'
@@ -434,7 +434,7 @@ const products = [
         name: 'Seren rose gold bracelet',
         price: 299,
         images: ['assets/images/serenrosegoldbracelet.jpg', 'assets/images/serenrosegoldbracelet1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'bracelets',
         description: 'Classic double-layer gold bracelet. Simple yet sophisticated.'
@@ -518,8 +518,8 @@ const products = [
         name: 'Royal White Charm Necklace',
         price: 349,
         images: ['assets/images/RoyalWhiteCharmnecklace.jpg', 'assets/images/RoyalWhiteCharmnecklace1.JPG', 'assets/images/RoyalWhiteCharmnecklace2.JPG'],
-        inStock: false,
-        qtyAvailable: 1,
+        inStock: true,
+        qtyAvailable: 2,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with dangling clear baguette-cut and small round cubic zirconia stones.'
     },
@@ -548,7 +548,7 @@ const products = [
         name: 'Double Layered Snake Chain Necklace',
         price: 252,
         images: ['assets/images/Doublelayeredsnakechainnecklace.JPG', 'assets/images/Doublelayeredsnakechainnecklace1.png'],
-        inStock: false,
+        inStock: true,
         qtyAvailable: 2,
         category: 'necklaces',
         description: 'Sleek double-layered snake chain. Minimalist elegance.'
@@ -588,7 +588,7 @@ const products = [
         name: 'Ivory Tear Drop Necklace',
         price: 199,
         images: ['assets/images/IvoryTearDropnecklace.jpg', 'assets/images/IvoryTearDropnecklac1.jpg', 'assets/images/IvoryTearDropnecklac1.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A delicate gold-tone layered chain necklace with a small teardrop-shaped white/opalescent stone pendant.'
@@ -598,7 +598,7 @@ const products = [
         name: 'Luna Gold Necklace',
         price: 229,
         images: ['assets/images/Lunagoldnecklace.JPG', 'assets/images/Lunagoldnecklace1.JPG', 'assets/images/Lunagoldnecklace1.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone necklace with a small, rounded rectangular white gemstone pendant.'
@@ -618,7 +618,7 @@ const products = [
         name: 'Golden rose Necklace',
         price: 229,
         images: ['assets/images/goldenrose.JPG', 'assets/images/goldenrose1.JPG', 'assets/images/goldenrose2.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone necklace with a round, mother-of-pearl pendant featuring a gold rose design'
@@ -628,7 +628,7 @@ const products = [
         name: 'Ivory square necklace',
         price: 229,
         images: ['assets/images/ivorysquarenecklace.jpg', 'assets/images/ivorysquarenecklace.jpg', 'https://via.placeholder.com/300x300?text=Necklace+15+Alt2'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'A gold-tone chain necklace with a small, square white gemstone pendant.'
@@ -728,7 +728,7 @@ const products = [
         name: 'Crystal frame necklace',
         price: 199,
         images: ['assets/images/crystalframenecklace.jpg', 'assets/images/crystalframenecklace1.jpg', 'assets/images/crystal frame.PNG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'necklaces',
         description: 'Gold-tone necklace with a clear crystal pendant for timeless elegance.'
@@ -760,7 +760,7 @@ const products = [
         name: 'Crescent White Earrings',
         price: 349,
         images: ['assets/images/crescentwhiteearrings.jpg', 'assets/images/crescentwhiteearrings.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Abstract hoop earrings featuring a gold-tone radial, fan-like texture half-circle set against a creamy white or marbled acrylic half-circle. ✨'
@@ -770,7 +770,7 @@ const products = [
         name: 'Gold Rose Studs',
         price: 99,
         images: ['assets/images/goldrosestuds.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 10,
         category: 'earrings',
         description: 'Gold-toned rose-shaped stud earrings with a textured, detailed design and a small faux pearl set in the center of each. '
@@ -810,7 +810,7 @@ const products = [
         name: 'Pear Petal Earrings',
         price: 129,
         images: ['assets/images/pearpetalearrings.jpg', 'https://via.placeholder.com/300x300?text=Earring+6+Alt'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 0,
         category: 'earrings',
         description: 'Gold-toned dangle earrings composed of several clustered white translucent, pearly petals resembling a cascading floral design. '
@@ -820,7 +820,7 @@ const products = [
         name: 'Gold Pepper Hoops',
         price: 119,
         images: ['assets/images/goldpepperhoops.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Chunky, gold-toned hoop earrings with an irregular geometric shape. '
@@ -840,7 +840,7 @@ const products = [
         name: 'Halo Stud Earrings',
         price: 310,
         images: ['assets/images/Halostudearrings.JPG'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 2,
         category: 'earrings',
         description: 'Stunning halo design studs. Sparkle and shine.'
@@ -980,7 +980,7 @@ const products = [
         name: 'Royal Plum Earrings',
         price: 129,
         images: ['assets/images/royal plum earrings(129)_11zon.jpg'],
-        inStock: true,
+        inStock: false,
         qtyAvailable: 1,
         category: 'earrings',
         description: 'Flower-shaped stud earrings with deep burgundy or maroon enamel petals, a gold-tone border, and a small, clustered gold center. '
@@ -1441,6 +1441,7 @@ document.getElementById('clear-cart').addEventListener('click', function() {
         showToast('Cart cleared');
     }
 });
+
 
 
 
